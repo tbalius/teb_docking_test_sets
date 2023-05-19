@@ -26,7 +26,7 @@ set ligname = "F0K"
 curl https://files.rcsb.org/ligands/view/${ligname}_ideal.sdf | grep -A1 SMILES | tail -1 | awk '{print $0, "'${ligname}'"}' > ${ligname}.smi
 
 
-csh $DOCK6BASE/src/hdb_lig_gen/generate/build_ligand_simple_with_dock6.csh ${ligname}.smi 
+csh $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_simple_with_dock6.csh ${ligname}.smi 
 
 # this file can be used with rigid and flex sampling methods to do flex, rigid and fixed-anchor 
 #   docking and single point and minimization on the xtal pose

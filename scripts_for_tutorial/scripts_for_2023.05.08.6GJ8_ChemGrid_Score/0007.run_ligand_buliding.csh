@@ -26,7 +26,7 @@ cp ../lig_complete.mol2 .
 source ~/zzz.programs/openbabel/env.csh
 
 #bash $DOCKBASE/
-bash $DOCK6BASE/src/hdb_lig_gen/generate/build_ligand_charged_mol2_with_dock6.sh lig_complete.mol2
+bash $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_charged_mol2_with_dock6.sh lig_complete.mol2
 
 # this file can be used with rigid and flex sampling methods to do flex, rigid and fixed-anchor 
 #   docking and single point and minimization on the xtal pose
