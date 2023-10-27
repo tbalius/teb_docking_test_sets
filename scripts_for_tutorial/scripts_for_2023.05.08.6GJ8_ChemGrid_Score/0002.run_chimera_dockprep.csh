@@ -28,7 +28,7 @@ cat $cof1 > cof.pdb
 
 # we change GCP to GTP by change the C3B atom to O3B and the 
 # element for C to O using a python script. 
-python $mountdir/0002.replace_atom_ele.py cof.pdb C3B C O cof_GTP 
+python $mountdir/replace_atom_ele.py cof.pdb C3B C O cof_GTP 
 
 
 touch chimera.log
