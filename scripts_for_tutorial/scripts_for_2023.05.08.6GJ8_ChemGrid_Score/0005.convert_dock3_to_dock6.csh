@@ -1,4 +1,3 @@
-
 #!/bin/csh 
 
 # Written by Trent Balius, 2022. 

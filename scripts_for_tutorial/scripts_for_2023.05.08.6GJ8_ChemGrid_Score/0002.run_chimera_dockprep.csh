@@ -33,6 +33,7 @@ python $mountdir/0002.replace_atom_ele.py cof.pdb C3B C O cof_GTP
 
 touch chimera.log
 
+# these scripts are available in teb_scripts_programs repository
 $chimerapath/chimera --nogui --script "${scriptdir}/chimera_dockprep.py rec.pdb rec_complete  "         >> chimera.log
 $chimerapath/chimera --nogui --script "${scriptdir}/chimera_addh.py cof.pdb cof_addh ' ' "                 >> chimera.log
 $chimerapath/chimera --nogui --script "${scriptdir}/chimera_addh.py     cof_GTP.pdb cof_GTP_addh ' '"      >> chimera.log

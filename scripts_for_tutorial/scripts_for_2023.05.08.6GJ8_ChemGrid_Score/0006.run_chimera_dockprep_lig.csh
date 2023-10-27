@@ -27,6 +27,7 @@ cat $lig > lig.pdb
 
 touch chimera.log
 
+# this script is available in teb_scripts_programs repository
 $chimerapath/chimera --nogui --script "${scriptdir}/chimera_dockprep.py lig.pdb lig_complete  "         >> chimera.log
 
 echo " Check the protonation state for the cofactor is correct.  "

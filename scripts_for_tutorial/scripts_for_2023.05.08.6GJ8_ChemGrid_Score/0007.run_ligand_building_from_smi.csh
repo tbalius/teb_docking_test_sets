@@ -5,6 +5,7 @@
 
 set mountdir = `pwd`
 
+# CHANGE THIS.
 #setenv DOCKBASE "/home/baliuste/zzz.github/DOCK"
 #setenv DOCKBASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
 setenv DOCK6BASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
