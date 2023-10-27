@@ -9,7 +9,7 @@ set mountdir = `pwd`
 
 
 set workdir = ${mountdir}/rec_no_cof
-setenv DOCKBASE "/home/baliuste/zzz.github/DOCK"
+setenv DOCKBASE "/home/baliuste/zzz.github/DOCK" # CHANGE ME.  Replace this with your DOCK 3 location.
 
 # if exists then do not over write.
 if ( -s $workdir ) then

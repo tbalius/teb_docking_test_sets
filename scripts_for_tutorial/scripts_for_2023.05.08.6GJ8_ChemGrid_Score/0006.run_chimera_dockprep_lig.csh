@@ -4,9 +4,9 @@
 # This script calls chimera's dockprep function and addh function.   
 
 set mountdir = `pwd`
-set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts
+set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts # CHANGE ME.
 
-setenv DOCKBASE "/home/baliuste/zzz.github/DOCK"
+setenv DOCKBASE "/home/baliuste/zzz.github/DOCK" # CHANGE ME.  Replace this with your DOCK 3 location.
 
 set lig =  ${mountdir}/lig.pdb
 
@@ -19,7 +19,7 @@ endif
 mkdir -p $workdir
 cd $workdir
 
-set chimerapath = /home/baliuste/zzz.programs/Chimera/chimera-1.13.1/bin/
+set chimerapath = /home/baliuste/zzz.programs/Chimera/chimera-1.13.1/bin/ # CHANGE ME.  Replace this with your chimera location.
 
 #cat $protein $ions > rec.pdb
 cat $lig > lig.pdb

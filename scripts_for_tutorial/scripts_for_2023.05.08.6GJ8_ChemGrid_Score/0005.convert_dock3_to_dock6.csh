@@ -58,6 +58,7 @@ score_grid_prefix              chem
 EOF
 
 # this script uses a developmental version of DOCK6.9.  code will be release in a future version of DOCK.  Like DOCK 6.11 or 6.12.  
+# replace the parameter file paths in gconv.in and the call to grid-convert with the correct path for your installation of DOCK 6
 
   /home/baliuste/zzz.github/dock6/bin/grid-convert -i gconv.in > gconv.log
 
