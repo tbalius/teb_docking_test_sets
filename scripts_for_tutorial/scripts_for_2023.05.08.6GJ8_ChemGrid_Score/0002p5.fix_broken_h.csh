@@ -12,6 +12,7 @@ foreach file (`ls cof_GTP_addh.pdb`)
   # if the cofactor is not protonated correctly then load into chimera and use the "Build Structure" function to remove undesired hydrogen(s) and add in desired hydrogen(s).  
   # modify the below line to replace one H for another.  
   sed -i 's/H3  GTP A 203      13.546  31.611   0.432  1.00  0.00           H/HN1 GTP A 203      16.813  29.728   2.042  1.00  0.00           H/g' temp.pdb
-  rm $file
+  #rm $file
+  mv $file $file.old
   mv temp.pdb $file
 end

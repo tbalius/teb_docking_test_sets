@@ -4,6 +4,7 @@
 # This script runs Ryan's blastermaster python masterscript for generating everything that dock needs, i.e. grids, spheres
 # Run on a cluster as jobs are submitted to the queue
 
+echo "source /home/baliuste/.bashrc.python2"
 
 set mountdir = `pwd`
 set workdir = ${mountdir}/rec_no_cof

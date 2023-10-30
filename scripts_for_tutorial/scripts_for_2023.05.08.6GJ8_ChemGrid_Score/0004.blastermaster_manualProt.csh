@@ -3,6 +3,8 @@
 # This script runs Ryan's blastermaster python masterscript for generating everything that dock needs, i.e. grids, spheres
 # Run on sgehead as jobs are submitted to the queue
 
+echo "source /home/baliuste/bashrc.python2"
+
 set mountdir = `pwd`
 set workdir = ${mountdir}/blastermaster_cof
 setenv DOCKBASE "/home/baliuste/zzz.github/DOCK" # CHANGE ME.  Replace this with your DOCK 3 location.

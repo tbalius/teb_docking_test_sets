@@ -12,7 +12,8 @@ set workdir = ${mountdir}/chimera/
 cd $workdir
 
 
-setenv AMBERHOME /home/baliuste/zzz.programs/amber/amber18  # CHANGE ME.  Replace this with your amber or ambertools location.  
+#setenv AMBERHOME /home/baliuste/zzz.programs/amber/amber18  # CHANGE ME.  Replace this with your amber or ambertools location.  
+setenv AMBERHOME /home/baliuste/zzz.programs/amber/amber22_ambertools23/amber22  # CHANGE ME.  Replace this with your amber or ambertools location.  
 
 
 #rm -r cof; 
