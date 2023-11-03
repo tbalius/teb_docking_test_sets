@@ -9,9 +9,9 @@ EOF
 
 ${chimerapath}/chimera --nogui chimera.com >& chimera.out
 
-python ../mol2_replace_sybyl_with_ele.py ref.mol2 ref_ele.mol2
-python ../mol2_replace_sybyl_with_ele.py test.mol2 test_ele.mol2
-python ../multimol2_removeH.py test_ele.mol2 test_ele_noH.mol2
+python mol2_replace_sybyl_with_ele.py ref.mol2 ref_ele.mol2
+python mol2_replace_sybyl_with_ele.py test.mol2 test_ele.mol2
+python multimol2_removeH.py test_ele.mol2 test_ele_noH.mol2
 
 cat << EOF > rmsd.in
 conformer_search_type                                        rigid

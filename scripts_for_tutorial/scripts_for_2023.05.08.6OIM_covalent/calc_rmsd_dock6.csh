@@ -13,10 +13,10 @@ EOF
 
 ${chimerapath}/chimera --nogui chimera.com >& chimera.out
 
-python ../mol2_replace_sybyl_with_ele.py ref.mol2 ref_ele.mol2
-python ../multimol2_removeH.py ref_ele.mol2 ref_ele_noH.mol2
-python ../mol2_replace_sybyl_with_ele.py covalent.out_scored_noDu.mol2 covalent.out_scored_noDu_ele.mol2
-python ../multimol2_removeH.py covalent.out_scored_noDu_ele.mol2 covalent.out_scored_noDu_ele_noH.mol2
+python mol2_replace_sybyl_with_ele.py ref.mol2 ref_ele.mol2
+python multimol2_removeH.py ref_ele.mol2 ref_ele_noH.mol2
+python mol2_replace_sybyl_with_ele.py covalent.out_scored_noDu.mol2 covalent.out_scored_noDu_ele.mol2
+python multimol2_removeH.py covalent.out_scored_noDu_ele.mol2 covalent.out_scored_noDu_ele_noH.mol2
 
 cat << EOF > rmsd.in
 conformer_search_type                                        rigid
