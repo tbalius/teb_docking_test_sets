@@ -6,8 +6,9 @@
 set mountdir = `pwd`
 set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts
 
-setenv DOCKBASE "/home/baliuste/zzz.github/DOCK"
+setenv DOCKBASE "/home/baliuste/zzz.github/DOCK" # CHANGE ME.  Replace this with your DOCK 3 location.
 
+#set ion = ${mountdir}/ion.pdb
 set protein = ${mountdir}/rec.pdb
 set cof1 =  ${mountdir}/cof.pdb
 

@@ -2,7 +2,7 @@
 # Scripted by Stanley Tan and Trent Balius, FNLCR, 2023, May 16.  
 
 # download file from web. 
-wget https://files.rcsb.org/view/6GJ8.pdb
+wget https://files.rcsb.org/view/6GJ8.pdb --no-check-certificate
 
 # put standard residues in the rec.pdb file.
 grep "ATOM   " 6GJ8.pdb | sed '1d' > rec.pdb

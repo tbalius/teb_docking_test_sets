@@ -59,6 +59,7 @@ cp rec.crg.pdb working/rec.crg.pdb
 $DOCKBASE/proteins/blastermaster/blastermaster.py --addNOhydrogensflag --chargeFile=`pwd`/amb.crg.oxt --vdwprottable=`pwd`/prot.table.ambcrg.ambH  --covalentResNum=12 --covalentResName=CYS --covalentResAtoms=HG,SG -v
 EOF
 
+#csh qsub.csh
 #qsub qsub.csh 
 sbatch qsub.csh 
 # csh qsub

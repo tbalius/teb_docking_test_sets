@@ -10,11 +10,9 @@ set mountdir = `pwd`
 #setenv DOCKBASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
 setenv DOCK6BASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
 
-
-
 set workdir = ${mountdir}/db2_build_from_smi/
 
-if -e $workdir then
+if (-e $workdir) then
   echo "$workdir exists, skipping ... "
   exit
 endif
@@ -25,7 +23,6 @@ cd $workdir
 set ligname = "F0K"
 
 curl https://files.rcsb.org/ligands/view/${ligname}_ideal.sdf | grep -A1 SMILES | tail -1 | awk '{print $0, "'${ligname}'"}' > ${ligname}.smi
-
 
 csh $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_simple_with_dock6.csh ${ligname}.smi 
 

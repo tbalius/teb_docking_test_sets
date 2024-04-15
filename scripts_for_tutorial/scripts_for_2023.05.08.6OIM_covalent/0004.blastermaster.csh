@@ -38,6 +38,7 @@ cd $workdir/
 $DOCKBASE/proteins/blastermaster/blastermaster.py --addhOptions=" -HIS -FLIPs " --covalentResNum=12 --covalentResName=CYS --covalentResAtoms=HG,SG -v 
 EOF
 
+#csh qsub.csh  # for running locally
 #qsub qsub.csh  # for sge or pbs 
 sbatch qsub.csh  # for slurm
 # csh qsub.csh  # for running on front-end-node. 

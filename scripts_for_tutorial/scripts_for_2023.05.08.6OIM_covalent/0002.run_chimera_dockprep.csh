@@ -8,6 +8,7 @@ set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts
 
 setenv DOCKBASE "/home/baliuste/zzz.github/DOCK"
 
+#set ion = ${mountdir}/ion.pdb
 set protein = ${mountdir}/rec.pdb
 set cof1 =  ${mountdir}/cof.pdb
 
@@ -17,6 +18,7 @@ if -e $workdir then
   echo "$workdir exists, skipping ... "
   continue
 endif
+
 mkdir -p $workdir
 cd $workdir
 

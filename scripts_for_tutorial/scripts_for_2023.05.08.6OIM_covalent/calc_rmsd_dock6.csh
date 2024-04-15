@@ -1,6 +1,6 @@
 #!/bin/csh
 
-set chimerapath = /home/baliuste//zzz.programs/Chimera/chimera-1.17.3_oel8/bin # CHANGE THIS.
+set chimerapath = /home/baliuste//zzz.programs/Chimera/chimera-1.17.3_oel8/bin # CHANGE THIS. Replace with your Chimera path.
 
 cat << EOF > chimera.com
 open ../dockprep/lig.pdb
@@ -42,7 +42,7 @@ num_scored_conformers                                        1
 rank_ligands                                                 no
 EOF
 
-/home/baliuste/zzz.github/dock6_main_not_fork/dock6/bin_oel8/dock6 -i rmsd.in -o rmsd.out
+/home/baliuste/zzz.github/dock6_main_not_fork/dock6/bin/dock6 -i rmsd.in -o rmsd.out
 
-grep HA_RMSDh: rmsd_output_scored.mol2
+grep "HA_RMSDh:" rmsd_output_scored.mol2
 

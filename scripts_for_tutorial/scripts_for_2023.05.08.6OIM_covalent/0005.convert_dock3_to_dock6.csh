@@ -51,13 +51,13 @@ bump_filter                    yes
 bump_overlap                   0.5
 receptor_file                  rec.crg
 box_file                       box
-vdw_definition_file            /home/baliuste/zzz.github/dock6/parameters/vdw_AMBER_parm94.defn
-chemical_definition_file       /home/baliuste/zzz.github/dock6/parameters/chemgrid/conv.defn
+vdw_definition_file            /home/baliuste/zzz.github/dock6_main_not_fork/dock6/parameters/vdw_AMBER_parm94.defn
+chemical_definition_file       /home/baliuste/zzz.github/dock6_main_not_fork/dock6/parameters/chemgrid/conv.defn
 score_grid_prefix              chem
 EOF
 
 # this script uses a developmental version of DOCK6.9.  code will be release in a future version of DOCK.  Like DOCK 6.11 or 6.12.  
 # replace the parameter file paths in gconv.in and the call to grid-convert with the correct path for your installation of DOCK 6
 
-  /home/baliuste/zzz.github/dock6_main_not_fork/dock6/bin_oel8/grid-convert -i gconv.in > gconv.log
+  /home/baliuste/zzz.github/dock6_main_not_fork/dock6/bin/grid-convert -i gconv.in > gconv.log
 

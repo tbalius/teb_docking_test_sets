@@ -10,10 +10,9 @@ set mountdir = `pwd`
 #setenv DOCKBASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
 setenv DOCK6BASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch/"
 
+set workdir = ${mountdir}/chimera_lig/db2_build
 
-set workdir = ${mountdir}/chimera_lig/db2_build/
-
-if -e $workdir then
+if (-e $workdir) then
   echo "$workdir exists, skipping ... "
   exit
 endif
@@ -21,10 +20,9 @@ endif
 mkdir -p $workdir
 cd $workdir
 
+cp ${mountdir}/lig_complete.mol2 .
 
-cp ../lig_complete.mol2 .
-
-source ~/zzz.programs/openbabel/env.csh
+source /home/baliuste/zzz.programs/openbabel/env.csh # CHANGE ME.
 
 #bash $DOCKBASE/
 bash $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_charged_mol2_with_dock6.sh lig_complete.mol2
@@ -35,6 +33,4 @@ bash $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_charged_mol2
  cat output.mol2 >> lig_solv.mol2
  echo "@<TRIPOS>SOLVATION" >> lig_solv.mol2
  cat output.solv >> lig_solv.mol2
-
-
 

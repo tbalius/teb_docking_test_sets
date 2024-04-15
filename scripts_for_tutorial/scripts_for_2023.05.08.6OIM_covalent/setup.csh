@@ -1,9 +1,12 @@
 #!/bin/csh
 
+# create list of db2 files to dock called split_database_index
 ls ../build_ligand_dock3/db_build_working/MOV/MOV_*_db2/*.db2.gz > split_database_index
 
+# copy INDOCK file from blastermaster
 cp ../dockprep/blastermaster_cof/INDOCK INDOCK.ori 
 
+# symlink dockfiles
 ln -s ../dockprep/blastermaster_cof/dockfiles . 
 
 # replace "../dockfiles" with "./dockfiles" 

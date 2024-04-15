@@ -16,6 +16,7 @@ if -e $workdir then
   echo "$workdir exists, skipping ... "
   continue
 endif
+
 mkdir -p $workdir
 cd $workdir
 

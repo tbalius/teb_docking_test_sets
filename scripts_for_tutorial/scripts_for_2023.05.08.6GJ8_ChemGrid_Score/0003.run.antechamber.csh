@@ -6,9 +6,9 @@
 set mountdir = `pwd`
 set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts
 
-set charge = -4  # MODIFY ME.  This is the formal charge of the cofactor.  
+set charge = -4  # MODIFY ME.  This is the formal charge of the cofactor.  For GTP and GTP analogs.
 
-set workdir = ${mountdir}/chimera/
+set workdir = ${mountdir}/chimera
 cd $workdir
 
 

@@ -2,7 +2,7 @@
 # Scripted by Stanley Tan and Trent Balius, FNLCR, 2023, May 16.  
 
 # download file from web. 
-wget https://files.rcsb.org/view/6OIM.pdb
+wget https://files.rcsb.org/view/6OIM.pdb --no-check-certificate
 
 # put standard residues in the rec.pdb file.
 grep "^ATOM   " 6OIM.pdb  > rec.pdb
