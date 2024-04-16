@@ -40,8 +40,9 @@ set amberexe = "\${AMBERHOME}/bin/pmemd.cuda"
 
 hostname
 #csh ${pwd}/pickGPU.csh
-source ${pwd}/pickGPU.csh
-echo \${CUDA_VISIBLE_DEVICES}
+#source ${pwd}/pickGPU.csh
+#echo \${CUDA_VISIBLE_DEVICES}
+set CUDA_VISIBLE_DEVICES = 0
 
 ## make a local directory on the server to run calculations
 ## those will be copied over to /nfs at the end of the script
