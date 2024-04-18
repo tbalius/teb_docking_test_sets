@@ -30,7 +30,7 @@ endif
 mkdir -p ${workdir}
 cd ${workdir}
 
-cp ${filedir}/rec_cof_complete.new_num.pdb ./rec.pdb
+cp ${filedir}/rec_cof_complete.pdb ./rec.pdb
 cp ${filedir}/xtal-lig_addh.pdb ./xtal-lig.pdb
 
 #rm -f leap.log tleap.rec.out tleap.rec.in
