@@ -42,6 +42,27 @@ grep "MG" temp.pdb >> rec.pdb
 # remove temp.pdb file. 
 rm temp.pdb
 
+# remove alternate sidechain conformations
+cat << EOF > remove_pdb_alt_confs.py
+import sys
+
+filein  = sys.argv[1]
+fileout = sys.argv[2]
+
+with open(filein) as fi:
+    filelines = fi.readlines()
+
+with open(fileout,'w') as fo:
+    for line in filelines:
+        if line[16] == ' ' or line[16] == 'A':
+            newline = line[:16] + ' ' + line[17:]
+            fo.write(newline)
+EOF
+
+python remove_pdb_alt_confs.py rec.pdb temp.pdb
+mv rec.pdb rec.pdb.old
+mv temp.pdb rec.pdb
+
 # Reduce is used to protonate the receptor
 set reduce = /home/baliuste/zzz.programs/DOCK/proteins/Reduce/reduce
 
@@ -69,7 +90,7 @@ grep "HETATM" rec_complete.pdb | sed 's/HETATM/ATOM  /g' >> rec_cof_complete.pdb
 echo "TER"                                               >> rec_cof_complete.pdb
 grep "HETATM" cof_addh.pdb | sed 's/HETATM/ATOM  /g'     >> rec_cof_complete.pdb
 
-python /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts/renumber_pdb_continues_del_chain_name.py rec_cof_complete.pdb 0 rec_cof_complete.new_num
+#python /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts/renumber_pdb_continues_del_chain_name.py rec_cof_complete.pdb 0 rec_cof_complete.new_num
 # script available in teb_scripts_programs repository
 
 mkdir amber_cof_parm
