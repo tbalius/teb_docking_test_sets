@@ -2,6 +2,8 @@
 
 echo "source /home/baliuste/zzz.programs/amber/amber22_ambertools23/amber22/amber.sh"
 
+setenv DOCK6BASE "/home/baliuste/zzz.github/dock6_10_merge/rizzo_branch"
+
 set pwd = `pwd`
 set scriptdir = /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts
 set workdir = ${pwd}/00.process_prepare_pdb_file
@@ -76,7 +78,7 @@ $chimerapath/chimera --nogui --script "${scriptdir}/chimera_addh.py cof.pdb cof_
 $chimerapath/chimera --nogui --script "${scriptdir}/chimera_addh.py xtal-lig.pdb xtal-lig_addh ' ' "   >> chimera.log
 # chimera_addh.py script is available in the teb_scripts_programs repository
 
-# fix broken h
+# fix cofactor broken h
 foreach file (`ls cof_addh.pdb`)
   echo $file
   grep "^HETATM" $file > temp.pdb
@@ -93,8 +95,8 @@ grep "HETATM" cof_addh.pdb | sed 's/HETATM/ATOM  /g'     >> rec_cof_complete.pdb
 #python /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts/renumber_pdb_continues_del_chain_name.py rec_cof_complete.pdb 0 rec_cof_complete.new_num
 # script available in teb_scripts_programs repository
 
-mkdir amber_cof_parm
-cd amber_cof_parm
+mkdir ${workdir}/amber_cof_parm
+cd ${workdir}/amber_cof_parm
 
 cp ../cof_addh.pdb ./cof.pdb
 
@@ -113,4 +115,30 @@ $AMBERHOME/bin/parmchk2 -dr no -i cof.ante.charge.prep -f  prepi -o cof.ante.cha
 EOF
 
 sbatch submit.csh
+
+mkdir ${workdir}/db_build_working
+cd ${workdir}/db_build_working
+
+cp ${workdir}/xtal-lig_addh.mol2 lig_complete.mol2
+
+cat << EOF > submit_build_lig.csh
+#!/bin/csh
+#SBATCH --output=stderr
+
+source /home/baliuste/zzz.programs/openbabel/env.csh
+
+bash $DOCK6BASE/template_pipeline/hdb_lig_gen/generate/build_ligand_charged_mol2_with_dock6.sh lig_complete.mol2
+
+# this file can be used with rigid and flex sampling methods to do flex, rigid and fixed-anchor 
+#   docking and single point and minimization on the xtal pose
+
+cat output.mol2 >> lig_solv.mol2
+echo "@<TRIPOS>SOLVATION" >> lig_solv.mol2
+cat output.solv >> lig_solv.mol2
+
+python /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts/mol2_replace_sybyl_with_ele.py lig_solv.mol2 lig_solv_ele.mol2
+python /home/baliuste/zzz.github/teb_scripts_programs/zzz.scripts/mol2_removeH_all.py lig_solv_ele.mol2 lig_solv_ele_noH.mol2
+EOF
+
+sbatch submit_build_lig.csh
 
