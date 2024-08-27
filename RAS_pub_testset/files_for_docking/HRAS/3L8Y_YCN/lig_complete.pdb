@@ -1,0 +1,65 @@
+HETATM    1  C1  YCN A   1      20.205   0.614 -13.519  1.00  0.00           C
+HETATM    2  N1  YCN A   1      21.015  -0.370 -12.761  1.00  0.00           N
+HETATM    3  C2  YCN A   1      18.843   0.875 -12.851  1.00  0.00           C
+HETATM    4  N2  YCN A   1      18.809   1.701 -11.632  1.00  0.00           N
+HETATM    5  C3  YCN A   1      17.458   1.681 -11.037  1.00  0.00           C
+HETATM    6  N3  YCN A   1      18.216  -0.587 -10.149  1.00  0.00           N
+HETATM    7  C4  YCN A   1      17.160   0.419 -10.202  1.00  0.00           C
+HETATM    8  N4  YCN A   1      20.297  -2.651 -10.395  1.00  0.00           N
+HETATM    9  C5  YCN A   1      18.037  -1.916  -9.575  1.00  0.00           C
+HETATM   10  C6  YCN A   1      18.891  -2.990 -10.247  1.00  0.00           C
+HETATM   11  C7  YCN A   1      20.990  -2.692 -11.683  1.00  0.00           C
+HETATM   12  C8  YCN A   1      20.332  -1.680 -12.619  1.00  0.00           C
+HETATM   13  H12 YCN A   1      20.037   0.231 -14.525  1.00  0.00           H
+HETATM   14  H13 YCN A   1      20.755   1.553 -13.584  1.00  0.00           H
+HETATM   15 HN13 YCN A   1      21.894  -0.509 -13.237  1.00  0.00           H
+HETATM   16  H22 YCN A   1      18.209   1.365 -13.590  1.00  0.00           H
+HETATM   17  H23 YCN A   1      18.396  -0.091 -12.614  1.00  0.00           H
+HETATM   18 HN22 YCN A   1      19.056   2.651 -11.867  1.00  0.00           H
+HETATM   19  H32 YCN A   1      17.356   2.552 -10.390  1.00  0.00           H
+HETATM   20  H33 YCN A   1      16.722   1.752 -11.839  1.00  0.00           H
+HETATM   21  H42 YCN A   1      16.271  -0.054 -10.621  1.00  0.00           H
+HETATM   22  H43 YCN A   1      16.933   0.729  -9.182  1.00  0.00           H
+HETATM   23 HN42 YCN A   1      20.802  -3.280  -9.786  1.00  0.00           H
+HETATM   24  H52 YCN A   1      16.989  -2.197  -9.675  1.00  0.00           H
+HETATM   25  H53 YCN A   1      18.291  -1.878  -8.516  1.00  0.00           H
+HETATM   26  H62 YCN A   1      18.823  -3.899  -9.649  1.00  0.00           H
+HETATM   27  H63 YCN A   1      18.478  -3.194 -11.234  1.00  0.00           H
+HETATM   28  H72 YCN A   1      20.912  -3.691 -12.110  1.00  0.00           H
+HETATM   29  H73 YCN A   1      22.039  -2.433 -11.542  1.00  0.00           H
+HETATM   30  H82 YCN A   1      19.325  -1.491 -12.246  1.00  0.00           H
+HETATM   31  H83 YCN A   1      20.251  -2.132 -13.607  1.00  0.00           H
+HETATM   32 HN32 YCN A   1      18.974  -0.164  -9.633  1.00  0.00           H
+CONECT    1    3    2   13   14
+CONECT    3    4   17   16    1
+CONECT    5    4    7   19   20
+CONECT    7    5    6   22   21
+CONECT    9   10    6   24   25
+CONECT   10   27    8    9   26
+CONECT   11   28    8   12   29
+CONECT   12    2   11   30   31
+CONECT   13    1
+CONECT   14    1
+CONECT   16    3
+CONECT   17    3
+CONECT   19    5
+CONECT   20    5
+CONECT   21    7
+CONECT   22    7
+CONECT   24    9
+CONECT   25    9
+CONECT   26   10
+CONECT   27   10
+CONECT   28   11
+CONECT   29   11
+CONECT   30   12
+CONECT   31   12
+CONECT   15    2
+CONECT   18    4
+CONECT   32    6
+CONECT   23    8
+CONECT    2   12   15    1
+CONECT    4    3    5   18
+CONECT    6    9    7   32
+CONECT    8   10   11   23
+END
