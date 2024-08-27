@@ -1,0 +1,37 @@
+HETATM    1  CAI 2XO   203      15.668  16.754 -21.012  1.00  0.00           C
+HETATM    2  CAJ 2XO   203      16.115  14.805 -17.883  1.00  0.00           C
+HETATM    3  NAK 2XO   203      16.552  15.727 -18.833  1.00  0.00           N
+HETATM    4  CAL 2XO   203      15.597  15.847 -19.782  1.00  0.00           C
+HETATM    5  NAM 2XO   203      14.558  15.023 -19.460  1.00  0.00           N
+HETATM    6  CAN 2XO   203      14.859  14.365 -18.281  1.00  0.00           C
+HETATM    7  CAO 2XO   203      14.147  13.392 -17.481  1.00  0.00           C
+HETATM    8  CAP 2XO   203      14.730  12.888 -16.290  1.00  0.00           C
+HETATM    9  CAQ 2XO   203      16.020  13.342 -15.882  1.00  0.00           C
+HETATM   10  CAR 2XO   203      16.716  14.290 -16.661  1.00  0.00           C
+HETATM   11  HAO 2XO   203      13.171  13.049 -17.791  1.00  0.00           H
+HETATM   12  HAP 2XO   203      14.199  12.162 -15.692  1.00  0.00           H
+HETATM   13  HAQ 2XO   203      16.465  12.958 -14.976  1.00  0.00           H
+HETATM   14  HAR 2XO   203      17.692  14.634 -16.351  1.00  0.00           H
+HETATM   15  HAM 2XO   203      13.709  14.912 -19.995  1.00  0.00           H
+HETATM   16 HAI1 2XO   203      14.756  16.644 -21.600  1.00  0.00           H
+HETATM   17 HAI2 2XO   203      15.772  17.792 -20.693  1.00  0.00           H
+HETATM   18 HAI3 2XO   203      16.528  16.475 -21.621  1.00  0.00           H
+CONECT    1   17   16    4   18
+CONECT    2    3    6   10
+CONECT    4    3    5    1
+CONECT    6    5    7    2
+CONECT    7    8    6   11
+CONECT    8    7    9   12
+CONECT    9    8   10   13
+CONECT   10    9    2   14
+CONECT   16    1
+CONECT   17    1
+CONECT   18    1
+CONECT   15    5
+CONECT   11    7
+CONECT   12    8
+CONECT   13    9
+CONECT   14   10
+CONECT    3    4    2
+CONECT    5   15    4    6
+END

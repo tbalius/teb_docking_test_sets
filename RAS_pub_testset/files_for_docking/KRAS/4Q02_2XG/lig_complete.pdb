@@ -1,0 +1,25 @@
+HETATM    1  CAH 2XG   203      14.917  13.287 -16.990  1.00  0.00           C
+HETATM    2  FAI 2XG   203      14.264  12.132 -16.791  1.00  0.00           F
+HETATM    3  CAJ 2XG   203      16.047  13.570 -16.286  1.00  0.00           C
+HETATM    4  FAK 2XG   203      16.533  12.713 -15.376  1.00  0.00           F
+HETATM    5  CAL 2XG   203      16.716  14.769 -16.509  1.00  0.00           C
+HETATM    6  CAM 2XG   203      16.216  15.658 -17.465  1.00  0.00           C
+HETATM    7  CAN 2XG   203      15.076  15.385 -18.177  1.00  0.00           C
+HETATM    8  CAO 2XG   203      14.417  14.180 -17.965  1.00  0.00           C
+HETATM    9  HAL 2XG   203      17.608  15.009 -15.952  1.00  0.00           H
+HETATM   10  HAM 2XG   203      16.741  16.584 -17.647  1.00  0.00           H
+HETATM   11  HAN 2XG   203      14.696  16.097 -18.894  1.00  0.00           H
+HETATM   12  HAO 2XG   203      13.535  13.930 -18.538  1.00  0.00           H
+CONECT    1    2    8    3
+CONECT    3    5    1    4
+CONECT    5    6    9    3
+CONECT    6    5   10    7
+CONECT    7    6    8   11
+CONECT    8   12    7    1
+CONECT    2    1
+CONECT    4    3
+CONECT    9    5
+CONECT   10    6
+CONECT   11    7
+CONECT   12    8
+END

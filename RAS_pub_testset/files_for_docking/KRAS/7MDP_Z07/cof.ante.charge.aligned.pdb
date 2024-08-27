@@ -1,0 +1,81 @@
+HETATM    1  PB  GDP   202       9.671  25.350  -6.097  1.00  0.00           P
+HETATM    2  O1B GDP   202      10.270  25.434  -7.483  1.00  0.00           O
+HETATM    3  O2B GDP   202       9.659  23.903  -5.658  1.00  0.00           O
+HETATM    4  O3B GDP   202       8.268  25.928  -6.077  1.00  0.00           O
+HETATM    5  O3A GDP   202      10.584  26.254  -5.132  1.00  0.00           O
+HETATM    6  PA  GDP   202      10.792  27.818  -5.475  1.00  0.00           P
+HETATM    7  O1A GDP   202       9.619  28.377  -6.259  1.00  0.00           O
+HETATM    8  O2A GDP   202      12.120  27.972  -6.187  1.00  0.00           O
+HETATM    9  O5' GDP   202      10.843  28.517  -4.010  1.00  0.00           O
+HETATM   10  C5' GDP   202       9.759  29.350  -3.576  1.00  0.00           C
+HETATM   11  C4' GDP   202      10.237  30.389  -2.568  1.00  0.00           C
+HETATM   12  O4' GDP   202      11.168  29.777  -1.684  1.00  0.00           O
+HETATM   13  C3' GDP   202      10.952  31.577  -3.212  1.00  0.00           C
+HETATM   14  O3' GDP   202      10.235  32.806  -3.006  1.00  0.00           O
+HETATM   15  C2' GDP   202      12.286  31.686  -2.513  1.00  0.00           C
+HETATM   16  O2' GDP   202      12.449  33.009  -2.004  1.00  0.00           O
+HETATM   17  C1' GDP   202      12.182  30.721  -1.353  1.00  0.00           C
+HETATM   18  N9  GDP   202      13.445  29.990  -1.171  1.00  0.00           N
+HETATM   19  C8  GDP   202      13.898  29.017  -1.978  1.00  0.00           C
+HETATM   20  N7  GDP   202      15.084  28.531  -1.526  1.00  0.00           N
+HETATM   21  C5  GDP   202      15.395  29.201  -0.408  1.00  0.00           C
+HETATM   22  C6  GDP   202      16.505  29.172   0.566  1.00  0.00           C
+HETATM   23  O6  GDP   202      17.457  28.376   0.412  1.00  0.00           O
+HETATM   24  N1  GDP   202      16.453  30.022   1.603  1.00  0.00           N
+HETATM   25  C2  GDP   202      15.434  30.888   1.774  1.00  0.00           C
+HETATM   26  N2  GDP   202      15.467  31.718   2.845  1.00  0.00           N
+HETATM   27  N3  GDP   202      14.375  30.966   0.920  1.00  0.00           N
+HETATM   28  C4  GDP   202      14.307  30.159  -0.168  1.00  0.00           C
+HETATM   29  H5' GDP   202       8.995  28.726  -3.111  1.00  0.00           H
+HETATM   30 H5'' GDP   202       9.330  29.859  -4.439  1.00  0.00           H
+HETATM   31  H4' GDP   202       9.384  30.752  -1.995  1.00  0.00           H
+HETATM   32  H3' GDP   202      11.097  31.398  -4.277  1.00  0.00           H
+HETATM   33  H2' GDP   202      13.105  31.416  -3.180  1.00  0.00           H
+HETATM   34  H1' GDP   202      11.918  31.254  -0.440  1.00  0.00           H
+HETATM   35  H8  GDP   202      13.388  28.667  -2.864  1.00  0.00           H
+HETATM   36  H3  GDP   202      13.636  31.631   1.099  1.00  0.00           H
+HETATM   37 HN21 GDP   202      16.241  31.678   3.491  1.00  0.00           H
+HETATM   38 HN22 GDP   202      14.716  32.376   2.996  1.00  0.00           H
+HETATM   39 HO3' GDP   202       9.362  32.737  -3.398  1.00  0.00           H
+HETATM   40 HO2' GDP   202      13.320  33.096  -1.608  1.00  0.00           H
+CONECT   17   15   12   18   34
+CONECT   25   24   26   27
+CONECT   15   13   16   17   33
+CONECT   13   14   15   11   32
+CONECT   28   18   21   27
+CONECT   11   13   12   10   31
+CONECT   21   22   20   28
+CONECT   10   11    9   29   30
+CONECT   22   21   23   24
+CONECT   19   35   18   20
+CONECT   34   17
+CONECT   33   15
+CONECT   36   27
+CONECT   32   13
+CONECT   31   11
+CONECT   29   10
+CONECT   30   10
+CONECT   35   19
+CONECT   37   26
+CONECT   38   26
+CONECT   40   16
+CONECT   39   14
+CONECT   24   22   25
+CONECT   26   37   38   25
+CONECT   27   36   25   28
+CONECT   20   19   21
+CONECT   18   17   19   28
+CONECT    7    6
+CONECT    2    1
+CONECT   16   15   40
+CONECT    8    6
+CONECT    3    1
+CONECT   14   13   39
+CONECT    5    6    1
+CONECT    4    1
+CONECT   12   17   11
+CONECT    9   10    6
+CONECT   23   22
+CONECT    6    9    7    8    5
+CONECT    1    2    5    3    4
+END

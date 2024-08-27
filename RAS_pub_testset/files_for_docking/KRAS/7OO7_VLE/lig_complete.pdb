@@ -1,0 +1,113 @@
+HETATM    1  C1  VLE   203       4.112  23.233  -7.823  1.00  0.00           C
+HETATM    2  C2  VLE   203       5.094  22.075  -7.552  1.00  0.00           C
+HETATM    3  C3  VLE   203       3.220  20.411  -7.100  1.00  0.00           C
+HETATM    4  C7  VLE   203       3.852  14.371  -7.462  1.00  0.00           C
+HETATM    5  C8  VLE   203       4.472  13.204  -7.959  1.00  0.00           C
+HETATM    6  C9  VLE   203       5.347  13.207  -9.003  1.00  0.00           C
+HETATM    7  C10 VLE   203       5.613  14.431  -9.617  1.00  0.00           C
+HETATM    8  C11 VLE   203       5.056  15.594  -9.173  1.00  0.00           C
+HETATM    9  C12 VLE   203       4.667  17.674 -10.257  1.00  0.00           C
+HETATM   10  C13 VLE   203       5.428  18.764  -9.376  1.00  0.00           C
+HETATM   11  C14 VLE   203       5.278  18.512  -7.883  1.00  0.00           C
+HETATM   12  C15 VLE   203       5.521  19.708  -6.993  1.00  0.00           C
+HETATM   13  C16 VLE   203       5.898  11.914  -9.533  1.00  0.00           C
+HETATM   14  C19 VLE   203       6.853   9.511 -10.652  1.00  0.00           C
+HETATM   15  C20 VLE   203       5.733  10.131 -11.163  1.00  0.00           C
+HETATM   16  C21 VLE   203       5.225  11.327 -10.617  1.00  0.00           C
+HETATM   17  C22 VLE   203       4.083  11.616 -11.396  1.00  0.00           C
+HETATM   18  C24 VLE   203       2.376  15.310  -6.032  1.00  0.00           C
+HETATM   19 Cl   VLE   203       6.594  14.483 -11.024  1.00  0.00          Cl
+HETATM   20  C6  VLE   203       4.167  15.625  -8.068  1.00  0.00           C
+HETATM   21  O1  VLE   203       5.427  16.635 -10.024  1.00  0.00           O
+HETATM   22  N1  VLE   203       3.892  18.083  -7.708  1.00  0.00           N
+HETATM   23  C4  VLE   203       2.895  19.147  -7.879  1.00  0.00           C
+HETATM   24  N   VLE   203       4.616  20.831  -7.280  1.00  0.00           N
+HETATM   25  O   VLE   203       6.302  22.318  -7.562  1.00  0.00           O
+HETATM   26  N4  VLE   203       2.976  14.225  -6.415  1.00  0.00           N
+HETATM   27  N5  VLE   203       2.557  16.561  -6.463  1.00  0.00           N
+HETATM   28  C5  VLE   203       3.475  16.720  -7.413  1.00  0.00           C
+HETATM   29  N2  VLE   203       3.906  10.706 -12.337  1.00  0.00           N
+HETATM   30  N3  VLE   203       4.907   9.800 -12.180  1.00  0.00           N
+HETATM   31  C18 VLE   203       7.490  10.083  -9.577  1.00  0.00           C
+HETATM   32  C17 VLE   203       7.048  11.279  -9.009  1.00  0.00           C
+HETATM   33  C23 VLE   203       7.842  11.848  -7.860  1.00  0.00           C
+HETATM   34  H32 VLE   203       3.044  20.225  -6.040  1.00  0.00           H
+HETATM   35  H33 VLE   203       2.563  21.213  -7.434  1.00  0.00           H
+HETATM   36  H8  VLE   203       4.241  12.261  -7.486  1.00  0.00           H
+HETATM   37 H122 VLE   203       4.657  17.940 -11.314  1.00  0.00           H
+HETATM   38 H123 VLE   203       3.655  17.509  -9.887  1.00  0.00           H
+HETATM   39 H132 VLE   203       6.488  18.741  -9.630  1.00  0.00           H
+HETATM   40 H133 VLE   203       5.029  19.751  -9.611  1.00  0.00           H
+HETATM   41  H14 VLE   203       5.944  17.702  -7.586  1.00  0.00           H
+HETATM   42 H152 VLE   203       6.547  20.044  -7.136  1.00  0.00           H
+HETATM   43 H153 VLE   203       5.390  19.407  -5.953  1.00  0.00           H
+HETATM   44  H19 VLE   203       7.222   8.595 -11.088  1.00  0.00           H
+HETATM   45  H22 VLE   203       3.440  12.469 -11.243  1.00  0.00           H
+HETATM   46  H24 VLE   203       1.632  15.185  -5.260  1.00  0.00           H
+HETATM   47  H42 VLE   203       1.928  18.772  -7.542  1.00  0.00           H
+HETATM   48  H43 VLE   203       2.825  19.395  -8.938  1.00  0.00           H
+HETATM   49  H18 VLE   203       8.357   9.592  -9.160  1.00  0.00           H
+HETATM   50  HN3 VLE   203       5.019   8.977 -12.755  1.00  0.00           H
+HETATM   51  H11 VLE   203       4.672  24.138  -8.060  1.00  0.00           H
+HETATM   52  H12 VLE   203       3.501  23.407  -6.936  1.00  0.00           H
+HETATM   53  H13 VLE   203       3.467  22.974  -8.663  1.00  0.00           H
+HETATM   54 H231 VLE   203       7.380  12.776  -7.523  1.00  0.00           H
+HETATM   55 H232 VLE   203       7.857  11.131  -7.039  1.00  0.00           H
+HETATM   56 H233 VLE   203       8.862  12.048  -8.188  1.00  0.00           H
+CONECT    1   51   52   53    2
+CONECT    7    8    6   19
+CONECT    8   20   21    7
+CONECT    9   21   37   38   10
+CONECT   10   39   40    9   11
+CONECT   11   22   41   10   12
+CONECT   12   42   24   43   11
+CONECT   13    6   32   16
+CONECT   32   31   33   13
+CONECT   31   49   32   14
+CONECT   14   15   44   31
+CONECT    2   24   25    1
+CONECT   15   30   16   14
+CONECT   16   15   17   13
+CONECT   17   45   16   29
+CONECT   33   55   56   54   32
+CONECT   18   26   46   27
+CONECT    3   23   24   35   34
+CONECT   23    3   22   47   48
+CONECT   28   20   22   27
+CONECT   20    8    4   28
+CONECT    4   20   26    5
+CONECT    5    4    6   36
+CONECT    6    5    7   13
+CONECT   19    7
+CONECT   51    1
+CONECT   52    1
+CONECT   37    9
+CONECT   38    9
+CONECT   53    1
+CONECT   39   10
+CONECT   40   10
+CONECT   41   11
+CONECT   42   12
+CONECT   43   12
+CONECT   49   31
+CONECT   44   14
+CONECT   45   17
+CONECT   54   33
+CONECT   55   33
+CONECT   56   33
+CONECT   46   18
+CONECT   34    3
+CONECT   35    3
+CONECT   47   23
+CONECT   48   23
+CONECT   36    5
+CONECT   50   30
+CONECT   24    3    2   12
+CONECT   22   23   28   11
+CONECT   29   30   17
+CONECT   30   50   15   29
+CONECT   26    4   18
+CONECT   27   18   28
+CONECT   25    2
+CONECT   21    8    9
+END

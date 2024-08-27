@@ -1,0 +1,37 @@
+HETATM    1  C1  BEN   203      15.550  15.662 -18.633  1.00  0.00           C
+HETATM    2  C2  BEN   203      14.576  14.665 -18.475  1.00  0.00           C
+HETATM    3  C3  BEN   203      14.626  13.777 -17.394  1.00  0.00           C
+HETATM    4  C4  BEN   203      15.649  13.882 -16.450  1.00  0.00           C
+HETATM    5  C5  BEN   203      16.612  14.864 -16.591  1.00  0.00           C
+HETATM    6  C6  BEN   203      16.560  15.741 -17.676  1.00  0.00           C
+HETATM    7  C   BEN   203      15.511  16.606 -19.818  1.00  0.00           C
+HETATM    8  N1  BEN   203      14.455  16.831 -20.469  1.00  0.00           N
+HETATM    9  N2  BEN   203      16.615  17.213 -20.256  1.00  0.00           N
+HETATM   10  H2  BEN   203      13.777  14.581 -19.197  1.00  0.00           H
+HETATM   11  H3  BEN   203      13.872  13.010 -17.290  1.00  0.00           H
+HETATM   12  H4  BEN   203      15.688  13.199 -15.614  1.00  0.00           H
+HETATM   13  H5  BEN   203      17.405  14.952 -15.862  1.00  0.00           H
+HETATM   14  H6  BEN   203      17.321  16.501 -17.776  1.00  0.00           H
+HETATM   15  H11 BEN   203      14.474  17.455 -21.262  1.00  0.00           H
+HETATM   16  H12 BEN   203      13.590  16.387 -20.195  1.00  0.00           H
+HETATM   17 HN21 BEN   203      16.570  17.826 -21.058  1.00  0.00           H
+HETATM   18 HN22 BEN   203      17.496  17.059 -19.787  1.00  0.00           H
+CONECT    7    1    9    8
+CONECT    1    2    6    7
+CONECT    2    3    1   10
+CONECT    3    2    4   11
+CONECT    4    3   12    5
+CONECT    5    4    6   13
+CONECT    6    1   14    5
+CONECT   15    8
+CONECT   16    8
+CONECT   10    2
+CONECT   11    3
+CONECT   12    4
+CONECT   13    5
+CONECT   14    6
+CONECT   17    9
+CONECT   18    9
+CONECT    8   16   15    7
+CONECT    9   17   18    7
+END

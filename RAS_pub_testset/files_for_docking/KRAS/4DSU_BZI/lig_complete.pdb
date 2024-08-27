@@ -1,0 +1,31 @@
+HETATM    1  N1  BZI   203      16.263  16.428 -18.822  1.00  0.00           N
+HETATM    2  C2  BZI   203      15.360  16.620 -19.739  1.00  0.00           C
+HETATM    3  N3  BZI   203      14.307  15.782 -19.539  1.00  0.00           N
+HETATM    4  C3A BZI   203      14.591  15.021 -18.415  1.00  0.00           C
+HETATM    5  C4  BZI   203      13.920  14.019 -17.729  1.00  0.00           C
+HETATM    6  C5  BZI   203      14.497  13.451 -16.612  1.00  0.00           C
+HETATM    7  C6  BZI   203      15.742  13.878 -16.170  1.00  0.00           C
+HETATM    8  C7  BZI   203      16.422  14.862 -16.835  1.00  0.00           C
+HETATM    9  C7A BZI   203      15.853  15.451 -17.967  1.00  0.00           C
+HETATM   10  H2  BZI   203      15.435  17.340 -20.541  1.00  0.00           H
+HETATM   11  H4  BZI   203      12.949  13.686 -18.068  1.00  0.00           H
+HETATM   12  H5  BZI   203      13.977  12.669 -16.078  1.00  0.00           H
+HETATM   13  H6  BZI   203      16.179  13.427 -15.292  1.00  0.00           H
+HETATM   14  H7  BZI   203      17.393  15.182 -16.486  1.00  0.00           H
+HETATM   15  H3  BZI   203      13.472  15.724 -20.104  1.00  0.00           H
+CONECT    2    3   10    1
+CONECT    4    5    9    3
+CONECT    5    4   11    6
+CONECT    6    5    7   12
+CONECT    7    8    6   13
+CONECT    8    7    9   14
+CONECT    9    8    4    1
+CONECT   10    2
+CONECT   15    3
+CONECT   11    5
+CONECT   12    6
+CONECT   13    7
+CONECT   14    8
+CONECT    1    2    9
+CONECT    3   15    2    4
+END
