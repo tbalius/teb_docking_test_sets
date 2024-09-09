@@ -1,0 +1,55 @@
+HETATM    1  CAD 0QR   203      10.074  13.345 -19.647  1.00  0.00           C
+HETATM    2  CAE 0QR   203       8.838  13.815 -19.194  1.00  0.00           C
+HETATM    3  CAF 0QR   203       8.860  15.157 -18.716  1.00  0.00           C
+HETATM    4  FAG 0QR   203       7.747  15.723 -18.242  1.00  0.00           F
+HETATM    5  CAH 0QR   203      10.009  15.993 -18.701  1.00  0.00           C
+HETATM    6  CAI 0QR   203      11.233  15.501 -19.176  1.00  0.00           C
+HETATM    7  CAC 0QR   203      11.227  14.164 -19.632  1.00  0.00           C
+HETATM    8  SAB 0QR   203      12.747  13.478 -20.270  1.00  0.00           S
+HETATM    9  OAA 0QR   203      12.791  13.720 -21.803  1.00  0.00           O
+HETATM   10  OAR 0QR   203      12.688  11.987 -19.948  1.00  0.00           O
+HETATM   11  NA2 0QR   203      14.026  14.343 -19.635  1.00  0.00           N
+HETATM   12  CAK 0QR   203      14.554  14.008 -18.411  1.00  0.00           C
+HETATM   13  NA3 0QR   203      15.653  14.718 -18.014  1.00  0.00           N
+HETATM   14  CAQ 0QR   203      14.040  12.992 -17.575  1.00  0.00           C
+HETATM   15  CAP 0QR   203      14.679  12.732 -16.318  1.00  0.00           C
+HETATM   16  CAO 0QR   203      15.801  13.526 -15.937  1.00  0.00           C
+HETATM   17  CAM 0QR   203      16.274  14.496 -16.837  1.00  0.00           C
+HETATM   18  NA1 0QR   203      17.326  15.270 -16.589  1.00  0.00           N
+HETATM   19  HAD 0QR   203      10.151  12.333 -20.017  1.00  0.00           H
+HETATM   20  HAE 0QR   203       7.942  13.212 -19.204  1.00  0.00           H
+HETATM   21  HAH 0QR   203       9.941  17.002 -18.325  1.00  0.00           H
+HETATM   22  HAI 0QR   203      12.126  16.107 -19.192  1.00  0.00           H
+HETATM   23  HAQ 0QR   203      13.176  12.418 -17.878  1.00  0.00           H
+HETATM   24  HAP 0QR   203      14.318  11.947 -15.671  1.00  0.00           H
+HETATM   25  HAO 0QR   203      16.276  13.384 -14.978  1.00  0.00           H
+HETATM   26 HA11 0QR   203      17.617  15.960 -17.268  1.00  0.00           H
+HETATM   27 HA12 0QR   203      17.834  15.170 -15.723  1.00  0.00           H
+CONECT    7    8    6    1
+CONECT    1    2   19    7
+CONECT    2    1    3   20
+CONECT    3    4    2    5
+CONECT    5    6    3   21
+CONECT    6   22    7    5
+CONECT   12   11   13   14
+CONECT   17   18   16   13
+CONECT   16   17   25   15
+CONECT   15   24   16   14
+CONECT   14   23   12   15
+CONECT    4    3
+CONECT   26   18
+CONECT   27   18
+CONECT   19    1
+CONECT   20    2
+CONECT   21    5
+CONECT   22    6
+CONECT   25   16
+CONECT   24   15
+CONECT   23   14
+CONECT   18   17   26   27
+CONECT   11    8   12
+CONECT   13   17   12
+CONECT    9    8
+CONECT   10    8
+CONECT    8    9   10    7   11
+END

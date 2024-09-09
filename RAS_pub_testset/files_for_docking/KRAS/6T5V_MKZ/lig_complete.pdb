@@ -1,0 +1,103 @@
+HETATM    1  C1  MKZ   203       4.591  23.188  -8.553  1.00  0.00           C
+HETATM    2  C2  MKZ   203       5.519  22.032  -8.320  1.00  0.00           C
+HETATM    3  C3  MKZ   203       6.011  19.665  -8.067  1.00  0.00           C
+HETATM    4  C7  MKZ   203       4.173  14.488  -8.076  1.00  0.00           C
+HETATM    5  C8  MKZ   203       4.767  13.249  -8.402  1.00  0.00           C
+HETATM    6  C9  MKZ   203       5.760  13.143  -9.348  1.00  0.00           C
+HETATM    7  C10 MKZ   203       6.250  11.801  -9.792  1.00  0.00           C
+HETATM    8  C11 MKZ   203       7.448  11.248  -9.298  1.00  0.00           C
+HETATM    9  C12 MKZ   203       8.273  11.945  -8.246  1.00  0.00           C
+HETATM   10  C13 MKZ   203       7.892  10.017  -9.788  1.00  0.00           C
+HETATM   11  C14 MKZ   203       7.201   9.317 -10.761  1.00  0.00           C
+HETATM   12  C15 MKZ   203       6.018   9.861 -11.232  1.00  0.00           C
+HETATM   13  C16 MKZ   203       4.351  11.310 -11.514  1.00  0.00           C
+HETATM   14  C19 MKZ   203       5.599  15.536  -9.707  1.00  0.00           C
+HETATM   15  C20 MKZ   203       4.609  15.653  -8.736  1.00  0.00           C
+HETATM   16  C21 MKZ   203       3.464  19.155  -9.294  1.00  0.00           C
+HETATM   17  C22 MKZ   203       3.662  20.338  -8.387  1.00  0.00           C
+HETATM   18 Cl   MKZ   203       7.395  14.260 -11.206  1.00  0.00          Cl
+HETATM   19  C18 MKZ   203       6.162  14.334 -10.000  1.00  0.00           C
+HETATM   20  C17 MKZ   203       5.536  11.096 -10.776  1.00  0.00           C
+HETATM   21  N5  MKZ   203       4.111  10.304 -12.332  1.00  0.00           N
+HETATM   22  N4  MKZ   203       5.124   9.416 -12.145  1.00  0.00           N
+HETATM   23  N3  MKZ   203       3.171  14.505  -7.148  1.00  0.00           N
+HETATM   24  C6  MKZ   203       2.640  15.696  -6.899  1.00  0.00           C
+HETATM   25  N2  MKZ   203       2.956  16.891  -7.431  1.00  0.00           N
+HETATM   26  C5  MKZ   203       3.940  16.869  -8.355  1.00  0.00           C
+HETATM   27  N1  MKZ   203       4.367  18.074  -8.912  1.00  0.00           N
+HETATM   28  C4  MKZ   203       5.763  18.508  -8.984  1.00  0.00           C
+HETATM   29  N   MKZ   203       5.077  20.761  -8.353  1.00  0.00           N
+HETATM   30  O   MKZ   203       6.661  22.306  -7.975  1.00  0.00           O
+HETATM   31  H32 MKZ   203       5.877  19.340  -7.036  1.00  0.00           H
+HETATM   32  H33 MKZ   203       7.033  20.019  -8.203  1.00  0.00           H
+HETATM   33  H8  MKZ   203       4.432  12.357  -7.893  1.00  0.00           H
+HETATM   34  H13 MKZ   203       8.807   9.598  -9.395  1.00  0.00           H
+HETATM   35  H14 MKZ   203       7.572   8.378 -11.142  1.00  0.00           H
+HETATM   36  H16 MKZ   203       3.723  12.183 -11.421  1.00  0.00           H
+HETATM   37  H19 MKZ   203       5.926  16.417 -10.238  1.00  0.00           H
+HETATM   38 H212 MKZ   203       2.434  18.809  -9.215  1.00  0.00           H
+HETATM   39 H213 MKZ   203       3.669  19.450 -10.322  1.00  0.00           H
+HETATM   40 H222 MKZ   203       3.053  21.167  -8.747  1.00  0.00           H
+HETATM   41 H223 MKZ   203       3.344  20.074  -7.379  1.00  0.00           H
+HETATM   42  H6  MKZ   203       1.846  15.708  -6.167  1.00  0.00           H
+HETATM   43  H42 MKZ   203       5.990  18.808 -10.007  1.00  0.00           H
+HETATM   44  H43 MKZ   203       6.412  17.680  -8.700  1.00  0.00           H
+HETATM   45  HN4 MKZ   203       5.199   8.532 -12.629  1.00  0.00           H
+HETATM   46 H121 MKZ   203       7.794  12.885  -7.971  1.00  0.00           H
+HETATM   47 H122 MKZ   203       9.270  12.147  -8.640  1.00  0.00           H
+HETATM   48 H123 MKZ   203       8.353  11.307  -7.365  1.00  0.00           H
+HETATM   49  H11 MKZ   203       5.164  24.115  -8.573  1.00  0.00           H
+HETATM   50  H12 MKZ   203       3.856  23.231  -7.749  1.00  0.00           H
+HETATM   51  H15 MKZ   203       4.079  23.057  -9.507  1.00  0.00           H
+CONECT    1   49   50   51    2
+CONECT    7    8    6   20
+CONECT    8    9   10    7
+CONECT    9   47   48    8   46
+CONECT   10   11    8   34
+CONECT   11   12   10   35
+CONECT   12   11   22   20
+CONECT   13   21   20   36
+CONECT   20   12   13    7
+CONECT   19   18    6   14
+CONECT   14   19   15   37
+CONECT    2   30    1   29
+CONECT   15    4   26   14
+CONECT   16   17   27   39   38
+CONECT   17   16   40   41   29
+CONECT    3   31   32   28   29
+CONECT   28   43   44    3   27
+CONECT   26   27   25   15
+CONECT   24   23   25   42
+CONECT    4    5   23   15
+CONECT    5    4    6   33
+CONECT    6    5   19    7
+CONECT   18   19
+CONECT   49    1
+CONECT   50    1
+CONECT   46    9
+CONECT   47    9
+CONECT   48    9
+CONECT   34   10
+CONECT   35   11
+CONECT   51    1
+CONECT   36   13
+CONECT   37   14
+CONECT   38   16
+CONECT   39   16
+CONECT   40   17
+CONECT   41   17
+CONECT   31    3
+CONECT   32    3
+CONECT   43   28
+CONECT   44   28
+CONECT   42   24
+CONECT   33    5
+CONECT   45   22
+CONECT   29   17    3    2
+CONECT   27   16   26   28
+CONECT   25   26   24
+CONECT   23    4   24
+CONECT   22   45   12   21
+CONECT   21   13   22
+CONECT   30    2
+END

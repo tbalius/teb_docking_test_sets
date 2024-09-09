@@ -1,0 +1,57 @@
+HETATM    1  C4  LXK   203       6.803  12.630  -9.562  1.00  0.00           C
+HETATM    2  C5  LXK   203       5.035  10.342 -12.119  1.00  0.00           C
+HETATM    3  C6  LXK   203       4.372  12.647 -11.739  1.00  0.00           C
+HETATM    4  C8  LXK   203       8.091   9.869  -9.665  1.00  0.00           C
+HETATM    5  C10 LXK   203       7.232  13.859 -10.376  1.00  0.00           C
+HETATM    6  N12 LXK   203       4.118  10.043 -13.055  1.00  0.00           N
+HETATM    7  C1  LXK   203       6.308  11.487 -10.497  1.00  0.00           C
+HETATM    8  C2  LXK   203       5.219  11.537 -11.427  1.00  0.00           C
+HETATM    9  C3  LXK   203       6.884  10.256 -10.467  1.00  0.00           C
+HETATM   10  S7  LXK   203       6.181   9.151 -11.612  1.00  0.00           S
+HETATM   11  C9  LXK   203       8.009  12.197  -8.701  1.00  0.00           C
+HETATM   12  C11 LXK   203       5.696  13.059  -8.585  1.00  0.00           C
+HETATM   13  N13 LXK   203       3.668  13.498 -12.032  1.00  0.00           N
+HETATM   14  C14 LXK   203       8.904  11.118  -9.315  1.00  0.00           C
+HETATM   15  H82 LXK   203       7.772   9.376  -8.746  1.00  0.00           H
+HETATM   16  H83 LXK   203       8.710   9.186 -10.247  1.00  0.00           H
+HETATM   17  H92 LXK   203       7.627  11.816  -7.754  1.00  0.00           H
+HETATM   18  H93 LXK   203       8.621  13.076  -8.497  1.00  0.00           H
+HETATM   19 H142 LXK   203       9.681  10.848  -8.600  1.00  0.00           H
+HETATM   20 H143 LXK   203       9.368  11.509 -10.221  1.00  0.00           H
+HETATM   21 H121 LXK   203       3.446  10.738 -13.344  1.00  0.00           H
+HETATM   22 H122 LXK   203       4.101   9.121 -13.470  1.00  0.00           H
+HETATM   23 H111 LXK   203       4.817  13.375  -9.147  1.00  0.00           H
+HETATM   24 H112 LXK   203       6.053  13.888  -7.973  1.00  0.00           H
+HETATM   25 H113 LXK   203       5.433  12.219  -7.941  1.00  0.00           H
+HETATM   26 H101 LXK   203       6.401  14.192 -10.998  1.00  0.00           H
+HETATM   27 H102 LXK   203       7.522  14.662  -9.697  1.00  0.00           H
+HETATM   28 H103 LXK   203       8.079  13.597 -11.011  1.00  0.00           H
+CONECT    7    8    9    1
+CONECT    5   26   27   28    1
+CONECT   12   24   25   23    1
+CONECT   14    4   19   11   20
+CONECT    8    7    3    2
+CONECT    9    7    4   10
+CONECT    1    7    5   12   11
+CONECT    2    8   10    6
+CONECT    3   13    8
+CONECT    4   15   14    9   16
+CONECT   11   17   18   14    1
+CONECT   26    5
+CONECT   27    5
+CONECT   28    5
+CONECT   23   12
+CONECT   24   12
+CONECT   25   12
+CONECT   21    6
+CONECT   22    6
+CONECT   19   14
+CONECT   20   14
+CONECT   15    4
+CONECT   16    4
+CONECT   17   11
+CONECT   18   11
+CONECT    6    2   21   22
+CONECT   13    3
+CONECT   10    2    9
+END

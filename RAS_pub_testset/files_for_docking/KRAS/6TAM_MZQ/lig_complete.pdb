@@ -1,0 +1,91 @@
+HETATM    1  C4  MZQ   203       6.087  15.529  -8.225  1.00  0.00           C
+HETATM    2  C5  MZQ   203       6.836  16.556  -7.431  1.00  0.00           C
+HETATM    3  C7  MZQ   203       5.003  17.973  -7.449  1.00  0.00           C
+HETATM    4  C8  MZQ   203       4.248  17.055  -8.193  1.00  0.00           C
+HETATM    5  C10 MZQ   203       3.266  19.776  -7.775  1.00  0.00           C
+HETATM    6  N12 MZQ   203       4.711  21.577  -7.440  1.00  0.00           N
+HETATM    7  C13 MZQ   203       5.297  22.776  -7.513  1.00  0.00           C
+HETATM    8  C15 MZQ   203       4.418  24.011  -7.671  1.00  0.00           C
+HETATM    9  C17 MZQ   203       5.512  20.383  -7.216  1.00  0.00           C
+HETATM   10  C20 MZQ   203       5.975  13.374  -9.294  1.00  0.00           C
+HETATM   11  C21 MZQ   203       6.641  12.083  -9.666  1.00  0.00           C
+HETATM   12  C22 MZQ   203       7.542  11.461  -8.810  1.00  0.00           C
+HETATM   13  C24 MZQ   203       8.149  10.274  -9.192  1.00  0.00           C
+HETATM   14  C26 MZQ   203       6.962  10.278 -11.274  1.00  0.00           C
+HETATM   15  O14 MZQ   203       6.526  22.865  -7.481  1.00  0.00           O
+HETATM   16  C11 MZQ   203       3.286  21.289  -7.609  1.00  0.00           C
+HETATM   17  C9  MZQ   203       4.492  19.276  -7.019  1.00  0.00           C
+HETATM   18  N6  MZQ   203       6.251  17.687  -7.098  1.00  0.00           N
+HETATM   19  O18 MZQ   203       8.005  16.368  -7.073  1.00  0.00           O
+HETATM   20  C19 MZQ   203       6.684  14.336  -8.577  1.00  0.00           C
+HETATM   21  C3  MZQ   203       4.795  15.824  -8.596  1.00  0.00           C
+HETATM   22  C2  MZQ   203       4.066  14.881  -9.331  1.00  0.00           C
+HETATM   23  C1  MZQ   203       4.659  13.664  -9.690  1.00  0.00           C
+HETATM   24  C27 MZQ   203       6.346  11.480 -10.901  1.00  0.00           C
+HETATM   25  C25 MZQ   203       7.866   9.681 -10.411  1.00  0.00           C
+HETATM   26  F28 MZQ   203       8.492   8.540 -10.735  1.00  0.00           F
+HETATM   27  F23 MZQ   203       7.875  11.959  -7.600  1.00  0.00           F
+HETATM   28  H8  MZQ   203       3.229  17.297  -8.459  1.00  0.00           H
+HETATM   29 H102 MZQ   203       3.331  19.506  -8.830  1.00  0.00           H
+HETATM   30 H103 MZQ   203       2.359  19.361  -7.336  1.00  0.00           H
+HETATM   31 H172 MZQ   203       6.143  20.176  -8.080  1.00  0.00           H
+HETATM   32 H173 MZQ   203       6.121  20.499  -6.321  1.00  0.00           H
+HETATM   33  H24 MZQ   203       8.856   9.802  -8.525  1.00  0.00           H
+HETATM   34  H26 MZQ   203       6.733   9.821 -12.226  1.00  0.00           H
+HETATM   35 H112 MZQ   203       2.717  21.594  -6.732  1.00  0.00           H
+HETATM   36 H113 MZQ   203       2.900  21.777  -8.504  1.00  0.00           H
+HETATM   37  H9  MZQ   203       4.245  19.218  -5.959  1.00  0.00           H
+HETATM   38  H6  MZQ   203       6.771  18.363  -6.556  1.00  0.00           H
+HETATM   39  H19 MZQ   203       7.709  14.146  -8.295  1.00  0.00           H
+HETATM   40  H2  MZQ   203       3.047  15.093  -9.620  1.00  0.00           H
+HETATM   41  H1  MZQ   203       4.102  12.945 -10.274  1.00  0.00           H
+HETATM   42  H27 MZQ   203       5.637  11.947 -11.568  1.00  0.00           H
+HETATM   43 H151 MZQ   203       5.042  24.904  -7.668  1.00  0.00           H
+HETATM   44 H152 MZQ   203       3.709  24.060  -6.844  1.00  0.00           H
+HETATM   45 H153 MZQ   203       3.873  23.951  -8.613  1.00  0.00           H
+CONECT   23   10   22   41
+CONECT    5   29   30   17   16
+CONECT   16    5   35    6   36
+CONECT    7   15    8    6
+CONECT    8   43   44   45    7
+CONECT    9   31   17   32    6
+CONECT   20    1   10   39
+CONECT   22   21   23   40
+CONECT   10   20   23   11
+CONECT   11   12   10   24
+CONECT   12   13   11   27
+CONECT   13   12   33   25
+CONECT   25   14   13   26
+CONECT   14   24   25   34
+CONECT   24   14   42   11
+CONECT   21    1    4   22
+CONECT    1   20   21    2
+CONECT    2   19    1   18
+CONECT    3    4   17   18
+CONECT    4    3   21   28
+CONECT   17    3    9    5   37
+CONECT   27   12
+CONECT   26   25
+CONECT   41   23
+CONECT   29    5
+CONECT   30    5
+CONECT   35   16
+CONECT   36   16
+CONECT   43    8
+CONECT   44    8
+CONECT   45    8
+CONECT   31    9
+CONECT   32    9
+CONECT   39   20
+CONECT   40   22
+CONECT   33   13
+CONECT   34   14
+CONECT   42   24
+CONECT   38   18
+CONECT   28    4
+CONECT   37   17
+CONECT    6    9   16    7
+CONECT   18    3   38    2
+CONECT   15    7
+CONECT   19    2
+END
