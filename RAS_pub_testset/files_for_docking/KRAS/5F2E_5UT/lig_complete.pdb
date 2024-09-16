@@ -31,8 +31,8 @@ HETATM   30  HC  5UT   204       5.638   8.815 -12.075  1.00  0.00           H
 HETATM   31  HC2 5UT   204       3.202  17.199  -8.418  1.00  0.00           H
 HETATM   32  HC3 5UT   204       4.094  16.548  -7.030  1.00  0.00           H
 HETATM   33  HC1 5UT   204       4.798  18.558  -6.330  1.00  0.00           H
-HETATM   34  HC4 5UT   204       6.734  16.431 -10.136  1.00  0.00           H
-HETATM   35  HC5 5UT   204       5.845  17.083 -11.531  1.00  0.00           H
+HETATM   34  HC4 5UT   204       5.841  17.084 -11.532  1.00  0.00           H
+HETATM   35  HC5 5UT   204       6.735  16.431 -10.140  1.00  0.00           H
 HETATM   36  HC6 5UT   204       9.901  11.832  -8.933  1.00  0.00           H
 HETATM   37  HC7 5UT   204       9.386  11.833 -10.701  1.00  0.00           H
 HETATM   38  HC8 5UT   204       2.255  14.291 -11.429  1.00  0.00           H
@@ -56,27 +56,27 @@ HETATM   55  HO  5UT   204       3.723  10.952 -13.834  1.00  0.00           H
 HETATM   56 HC24 5UT   204       6.295  11.666  -7.751  1.00  0.00           H
 HETATM   57 HC25 5UT   204       7.838  12.373  -7.215  1.00  0.00           H
 HETATM   58 HC26 5UT   204       7.768  10.666  -7.712  1.00  0.00           H
-CONECT   20   56   57   58    1
-CONECT    1    2   11   19   20
-CONECT    7   31   23   24   32
-CONECT    8   27   23   33   25
-CONECT   27    8   51   50   26
-CONECT   28   29    9   26
-CONECT    9   52   53   54   28
-CONECT   25    8   48   49   26
-CONECT   22   10   23   44   45
-CONECT   10   21   22   34   35
-CONECT   18    2   41    6
-CONECT    2    3   18    1
+CONECT   20    1   56   57   58
+CONECT    1   19   20    2   11
+CONECT    7   23   24   31   32
+CONECT    8   23   27   25   33
+CONECT   27   50   51   26    8
+CONECT   28   26    9   29
+CONECT    9   52   28   53   54
+CONECT   25   48   49   26    8
+CONECT   22   45   23   10   44
+CONECT   10   35   22   34   21
+CONECT   18    2    6   41
+CONECT    2   18    3    1
 CONECT   11   36   37   19    1
-CONECT   19   42   43   11    1
-CONECT    3   17    2    4
-CONECT    4   30    3    5
-CONECT    5   16    6    4
+CONECT   19    1   11   42   43
+CONECT    3    4    2   17
+CONECT    4    3    5   30
+CONECT    5    4    6   16
 CONECT    6   18    5   15
-CONECT   14   38   39   13   15
-CONECT   13   21   12   14
-CONECT   24   21   46   47    7
+CONECT   14   38   15   13   39
+CONECT   13   12   14   21
+CONECT   24   46   47    7   21
 CONECT   17    3
 CONECT   30    4
 CONECT   33    8
@@ -107,11 +107,11 @@ CONECT   38   14
 CONECT   39   14
 CONECT   40   15
 CONECT   55   16
-CONECT   15   40    6   14
-CONECT   21   10   24   13
-CONECT   23    8   22    7
+CONECT   15   14    6   40
+CONECT   21   10   13   24
+CONECT   23    7   22    8
 CONECT   26   27   28   25
-CONECT   16   55    5
+CONECT   16    5   55
 CONECT   29   28
 CONECT   12   13
 END

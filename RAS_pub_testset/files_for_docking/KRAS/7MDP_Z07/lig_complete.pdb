@@ -15,16 +15,16 @@ HETATM   14  S7  Z07   201       6.052   9.160 -11.076  1.00  0.00           S
 HETATM   15  H6  Z07   201       8.497   9.338  -9.130  1.00  0.00           H
 HETATM   16  H1  Z07   201       9.247  11.315  -7.879  1.00  0.00           H
 HETATM   17  H2  Z07   201       8.032  13.449  -8.097  1.00  0.00           H
-HETATM   18 H101 Z07   201       3.707   9.181 -12.884  1.00  0.00           H
-HETATM   19 H102 Z07   201       3.185  10.844 -12.730  1.00  0.00           H
-CONECT    5    3    7   16
-CONECT    6    8   11    9   10
-CONECT    7    8    5   17
+HETATM   18 H101 Z07   201       3.185  10.844 -12.730  1.00  0.00           H
+HETATM   19 H102 Z07   201       3.707   9.181 -12.884  1.00  0.00           H
+CONECT    5    3   16    7
+CONECT    6   10    8    9   11
+CONECT    7   17    5    8
 CONECT    8    6    7    1
-CONECT    1    8    2   13
+CONECT    1   13    8    2
 CONECT    2    3   14    1
-CONECT    3    5    2   15
-CONECT    4   14   12   13
+CONECT    3    5   15    2
+CONECT    4   13   14   12
 CONECT    9    6
 CONECT   10    6
 CONECT   11    6
@@ -33,7 +33,7 @@ CONECT   18   12
 CONECT   19   12
 CONECT   17    7
 CONECT   15    3
-CONECT   12   19    4   18
+CONECT   12    4   18   19
 CONECT   13    4    1
-CONECT   14    2    4
+CONECT   14    4    2
 END

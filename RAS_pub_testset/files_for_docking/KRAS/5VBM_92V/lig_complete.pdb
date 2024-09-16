@@ -39,19 +39,19 @@ HETATM   38 H232 92V   203       7.339   9.928 -10.383  1.00  0.00           H
 HETATM   39 H233 92V   203       8.823  10.847 -10.729  1.00  0.00           H
 CONECT    5    6   14    7
 CONECT    6   13   19    5
-CONECT    7   20    5   29
-CONECT    8   19    9   12
-CONECT    9   30    8   10
-CONECT   10   31    9   11
-CONECT   11   22    1   10
-CONECT    1   24   11   12
-CONECT   12   32    1    8
-CONECT    2   34   35   36   22
-CONECT   13   17    6   18   16
-CONECT   14    5   21   23
-CONECT    3   25   26   21    4
-CONECT    4    3   15   27   28
-CONECT   15   37    4   38   39
+CONECT    7   29   20    5
+CONECT    8   19   12    9
+CONECT    9   10    8   30
+CONECT   10    9   11   31
+CONECT   11   10   22    1
+CONECT    1   24   12   11
+CONECT   12    1    8   32
+CONECT    2   22   35   34   36
+CONECT   13    6   16   17   18
+CONECT   14   23   21    5
+CONECT    3   21    4   25   26
+CONECT    4   28   15   27    3
+CONECT   15   37   38   39    4
 CONECT   16   13
 CONECT   17   13
 CONECT   18   13
@@ -73,7 +73,7 @@ CONECT   38   15
 CONECT   39   15
 CONECT   19    6   20    8
 CONECT   20   19    7
-CONECT   21   33    3   14
-CONECT   22    2   11
+CONECT   21   14    3   33
+CONECT   22   11    2
 CONECT   23   14
 END

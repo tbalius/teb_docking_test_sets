@@ -25,13 +25,13 @@ HETATM   24 H133 QWH   201       0.490  22.240 -14.719  1.00  0.00           H
 CONECT   13    2
 CONECT    1    2   11   10
 CONECT    6    9   23   24   22
-CONECT    7    4   21   19   20
+CONECT    7   19   20   21    4
 CONECT    2    9   13    1
 CONECT    9    2    8    6
-CONECT   11   15    4    1
-CONECT    3   12   10    5
+CONECT   11   15    1    4
+CONECT    3   12    5   10
 CONECT    4    7   11    8
-CONECT    5   17    3   16   18
+CONECT    5   16   18   17    3
 CONECT   22    6
 CONECT   23    6
 CONECT   24    6

@@ -38,14 +38,14 @@ HETATM   37  HN1 GDP   201      16.942  29.997   2.217  1.00  0.00           H
 HETATM   38 HN21 GDP   201      14.675  32.589   2.523  1.00  0.00           H
 HETATM   39 HN22 GDP   201      15.956  31.944   3.193  1.00  0.00           H
 HETATM   40 HO3' GDP   201       9.840  32.585  -3.109  1.00  0.00           H
-CONECT   17   15   18   35   12
+CONECT   17   18   35   12   15
 CONECT   25   24   26   27
 CONECT   15   16   17   33   13
-CONECT   13   14   15   32   11
+CONECT   13   32   11   14   15
 CONECT   28   18   21   27
-CONECT   11   31   12   10   13
+CONECT   11   31   10   13   12
 CONECT   21   20   22   28
-CONECT   10   29   30   11    9
+CONECT   10   29   30    9   11
 CONECT   22   21   23   24
 CONECT   19   18   20   36
 CONECT   35   17
@@ -67,15 +67,15 @@ CONECT   20   19   21
 CONECT   18   17   19   28
 CONECT    7    6
 CONECT    2    1
-CONECT   16   15   34
+CONECT   16   34   15
 CONECT    8    6
 CONECT    3    1
-CONECT   14   40   13
+CONECT   14   13   40
 CONECT    5    1    6
 CONECT    4    1
 CONECT   12   17   11
 CONECT    9    6   10
 CONECT   23   22
 CONECT    6    7    8    5    9
-CONECT    1    2    3    4    5
+CONECT    1    2    4    3    5
 END

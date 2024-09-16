@@ -16,13 +16,13 @@ HETATM   15  H11 BEN   203      14.474  17.455 -21.262  1.00  0.00           H
 HETATM   16  H12 BEN   203      13.590  16.387 -20.195  1.00  0.00           H
 HETATM   17 HN21 BEN   203      16.570  17.826 -21.058  1.00  0.00           H
 HETATM   18 HN22 BEN   203      17.496  17.059 -19.787  1.00  0.00           H
-CONECT    7    8    9    1
+CONECT    7    1    9    8
 CONECT    1    2    6    7
-CONECT    2    3   10    1
-CONECT    3   11    2    4
-CONECT    4    5   12    3
-CONECT    5    4   13    6
-CONECT    6    5   14    1
+CONECT    2    3    1   10
+CONECT    3    2    4   11
+CONECT    4    3   12    5
+CONECT    5    4    6   13
+CONECT    6    1   14    5
 CONECT   15    8
 CONECT   16    8
 CONECT   10    2
@@ -33,5 +33,5 @@ CONECT   14    6
 CONECT   17    9
 CONECT   18    9
 CONECT    8   16   15    7
-CONECT    9   18   17    7
+CONECT    9   17   18    7
 END

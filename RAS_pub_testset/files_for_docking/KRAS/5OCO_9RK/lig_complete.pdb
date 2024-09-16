@@ -30,20 +30,20 @@ HETATM   29  H93 9RK   202      11.996  12.679 -19.782  1.00  0.00           H
 HETATM   30  H12 9RK   202      11.187  16.032 -20.792  1.00  0.00           H
 HETATM   31  H17 9RK   202       9.156  20.438 -20.749  1.00  0.00           H
 HETATM   32  H18 9RK   202      11.405  21.704 -20.504  1.00  0.00           H
-CONECT    1    2    6   20
-CONECT    8    7   26   14   25
-CONECT   15    9   16   14
+CONECT    1    2   20    6
+CONECT    8   14   26   25    7
+CONECT   15   14    9   16
 CONECT   16   10   19   15
-CONECT   10   27   16   17
-CONECT   17   18   10   31
-CONECT   18   19   32   17
-CONECT    2    3    1   21
+CONECT   10   27   17   16
+CONECT   17   10   31   18
+CONECT   18   32   17   19
+CONECT    2    3   21    1
 CONECT    3    2    4   22
-CONECT    4   11    3    5
-CONECT    5   13    4    6
-CONECT    6    5    1   23
-CONECT    7   11    8   12   24
-CONECT   12   13    7   28   29
+CONECT    4    3   11    5
+CONECT    5    4   13    6
+CONECT    6    5   23    1
+CONECT    7    8   24   12   11
+CONECT   12   13   29    7   28
 CONECT   20    1
 CONECT   25    8
 CONECT   26    8
@@ -58,8 +58,8 @@ CONECT   24    7
 CONECT   28   12
 CONECT   29   12
 CONECT   14    8   30   15
-CONECT   13    5   12
+CONECT   13   12    5
 CONECT    9   15
-CONECT   19   18   16
+CONECT   19   16   18
 CONECT   11    4    7
 END

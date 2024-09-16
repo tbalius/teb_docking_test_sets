@@ -40,20 +40,20 @@ HETATM   39 H221 21K   201       1.851  24.248  -7.648  1.00  0.00           H
 HETATM   40 H222 21K   201       3.592  24.002  -7.374  1.00  0.00           H
 HETATM   41 H223 21K   201       2.412  22.858  -6.690  1.00  0.00           H
 HETATM   42  H03 21K   201       4.125  21.048  -9.813  1.00  0.00           H
-CONECT    9   10    4   29    8
+CONECT    9   10    8    4   29
 CONECT   10    9   11   30   31
-CONECT   11   10   12   32   33
-CONECT   13   14   22   12
-CONECT   14   15   34   13   35
-CONECT   16   15    2   17
-CONECT   17    1   37   16
-CONECT    1   17   18   24
-CONECT   18   20    1   19
-CONECT   20   38    2   18
-CONECT    2   20   21   16
-CONECT    3   26    4   12   25
-CONECT    4    9    3   27   28
-CONECT    5   39   40   41    7
+CONECT   11   10   32   33   12
+CONECT   13   22   14   12
+CONECT   14   15   34   35   13
+CONECT   16    2   17   15
+CONECT   17   37   16    1
+CONECT    1   17   24   18
+CONECT   18    1   19   20
+CONECT   20    2   18   38
+CONECT    2   16   21   20
+CONECT    3    4   12   25   26
+CONECT    4    9    3   28   27
+CONECT    5    7   39   40   41
 CONECT   19   18
 CONECT   21    2
 CONECT   42    8
@@ -76,10 +76,10 @@ CONECT   39    5
 CONECT   40    5
 CONECT   41    5
 CONECT    8    9    7   42
-CONECT   12    3   13   11
-CONECT   15   14   16   36
+CONECT   12   11    3   13
+CONECT   15   36   16   14
 CONECT    6    7
 CONECT   22   13
 CONECT   23    7
-CONECT    7    6    5   23    8
+CONECT    7    8    5    6   23
 END

@@ -76,36 +76,36 @@ HETATM   75 H311 IQC   203       6.755  11.590  -7.430  1.00  0.00           H
 HETATM   76 H312 IQC   203       7.045   9.886  -7.006  1.00  0.00           H
 HETATM   77 H313 IQC   203       8.322  10.834  -7.805  1.00  0.00           H
 CONECT   18   28   22   47   48
-CONECT   14   36    5   34
-CONECT    5   14   10    3
-CONECT    3   13    5   45
-CONECT   13    8   42    3
-CONECT    8   12   13    7
-CONECT   12    8   10   41
-CONECT   10   12    5   33
-CONECT   28   18   39   19
-CONECT    7    6    8    9
+CONECT   14   36   34    5
+CONECT    5    3   10   14
+CONECT    3   45    5   13
+CONECT   13    8    3   42
+CONECT    8    7   12   13
+CONECT   12    8   41   10
+CONECT   10   33    5   12
+CONECT   28   19   18   39
+CONECT    7    8    9    6
 CONECT    9    7   30    1
-CONECT    1    2    9   43
-CONECT    2   11    1   44
-CONECT   11   35    6    2
-CONECT    6    4   11    7
-CONECT    4   46    6   32
-CONECT   19   23   49   28   50
-CONECT   30   75   76   77    9
-CONECT   17   16   37   40
-CONECT   16   73   74   72   17
-CONECT   24   59   36   20   60
-CONECT   20   29   52   24   51
-CONECT   29   21   20   26   27
-CONECT   23   57   58   38   19
-CONECT   21   29   53   54   25
+CONECT    1   43    9    2
+CONECT    2   44    1   11
+CONECT   11   35    2    6
+CONECT    6    4    7   11
+CONECT    4   32   46    6
+CONECT   19   50   28   23   49
+CONECT   30    9   75   76   77
+CONECT   17   16   40   37
+CONECT   16   72   17   73   74
+CONECT   24   36   59   60   20
+CONECT   20   24   51   52   29
+CONECT   29   21   26   27   20
+CONECT   23   19   58   57   38
+CONECT   21   53   25   29   54
 CONECT   25   21   36   61   62
-CONECT   26   29   37   63   64
-CONECT   27   29   37   66   65
-CONECT   22   56   18   38   55
+CONECT   26   63   64   29   37
+CONECT   27   65   29   66   37
+CONECT   22   18   55   56   38
 CONECT   31   69   70   71   38
-CONECT   15   39   33   34
+CONECT   15   33   34   39
 CONECT   42   13
 CONECT   41   12
 CONECT   47   18
@@ -144,12 +144,12 @@ CONECT   69   31
 CONECT   70   31
 CONECT   71   31
 CONECT   34   15   14
-CONECT   36   14   24   25
+CONECT   36   24   25   14
 CONECT   33   15   10
-CONECT   32    4   35
-CONECT   35   68   11   32
-CONECT   37   26   17   27
-CONECT   38   23   67   22   31
+CONECT   32   35    4
+CONECT   35   32   68   11
+CONECT   37   17   26   27
+CONECT   38   31   67   23   22
 CONECT   39   15   28
 CONECT   40   17
 END

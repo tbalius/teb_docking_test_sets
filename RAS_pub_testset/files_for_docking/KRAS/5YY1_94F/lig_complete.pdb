@@ -46,26 +46,26 @@ HETATM   45 H163 94F   203       3.090  21.402  -8.087  1.00  0.00           H
 HETATM   46 H131 94F   203       5.097  24.240  -8.422  1.00  0.00           H
 HETATM   47 H132 94F   203       3.785  23.239  -7.757  1.00  0.00           H
 HETATM   48 H133 94F   203       4.164  23.167  -9.494  1.00  0.00           H
-CONECT   19   43   42   17   25
-CONECT   16   26   15   25
-CONECT   15   47   48   46   16
-CONECT   20   44   45   18   25
-CONECT   18   40   41   24   20
-CONECT    7   11   14    5
-CONECT    5    7   36   13
-CONECT   12   11    9   27
-CONECT   13    9   31    5
-CONECT    9   12    8   13
-CONECT    8   10    3    9
-CONECT   10    4   21    8
-CONECT   21   10   29   30   28
-CONECT    4   10   35    2
-CONECT   11   12    7   22
+CONECT   19   42   43   17   25
+CONECT   16   26   25   15
+CONECT   15   46   47   48   16
+CONECT   20   45   25   44   18
+CONECT   18   40   41   20   24
+CONECT    7    5   11   14
+CONECT    5   36    7   13
+CONECT   12   27    9   11
+CONECT   13    5    9   31
+CONECT    9    8   12   13
+CONECT    8    3   10    9
+CONECT   10   21    4    8
+CONECT   21   28   29   10   30
+CONECT    4   35    2   10
+CONECT   11    7   22   12
 CONECT    2    4    1   33
-CONECT    1    3    2   32
+CONECT    1    2    3   32
 CONECT    3   34    1    8
 CONECT    6   37   23   22
-CONECT   14    7   23   24
+CONECT   14    7   24   23
 CONECT   17   39   38   24   19
 CONECT   31   13
 CONECT   27   12
@@ -89,9 +89,9 @@ CONECT   34    3
 CONECT   37    6
 CONECT   38   17
 CONECT   39   17
-CONECT   25   16   19   20
-CONECT   22   11    6
-CONECT   23   14    6
-CONECT   24   14   17   18
+CONECT   25   20   16   19
+CONECT   22    6   11
+CONECT   23    6   14
+CONECT   24   17   18   14
 CONECT   26   16
 END

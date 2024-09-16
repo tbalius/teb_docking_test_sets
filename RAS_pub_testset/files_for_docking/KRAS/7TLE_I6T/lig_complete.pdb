@@ -72,30 +72,30 @@ HETATM   71 H253 I6T   202      -1.097  16.715  -1.971  1.00  0.00           H
 CONECT    8   12   11   47   48
 CONECT    4    5    6    3
 CONECT    9   37   38   33    3
-CONECT   10   11   49   50   30
-CONECT   11   10    8   51   52
-CONECT   12   34    8   53   13
-CONECT   13   54   55   12   30
+CONECT   10   30   11   49   50
+CONECT   11    8   10   51   52
+CONECT   12   13   34    8   53
+CONECT   13   12   30   54   55
 CONECT   14   15   35   56   57
-CONECT    3    9    1    4
-CONECT   15   58   14   18   31
-CONECT   16   60   59   17   31
-CONECT   17   16   39   40   18
-CONECT   18   15   41   42   17
+CONECT    3    9    4    1
+CONECT   15   18   31   14   58
+CONECT   16   31   17   59   60
+CONECT   17   18   16   39   40
+CONECT   18   15   17   41   42
 CONECT   19   69   70   71   31
-CONECT   20   33   21   25
-CONECT   21   20   61   22
+CONECT   20   21   25   33
+CONECT   21   20   22   61
 CONECT   22   21   62   23
-CONECT   23   63   24   22
+CONECT   23   63   22   24
 CONECT   24   26   25   23
 CONECT   25   20   24   29
-CONECT   26   64   27   24
-CONECT   27   28   65   26
-CONECT   28   66   27   29
-CONECT   29   28   36   25
-CONECT    2   35   32    1
-CONECT    5   32    4   30
-CONECT    6    7   43   44    4
+CONECT   26   64   24   27
+CONECT   27   26   65   28
+CONECT   28   66   29   27
+CONECT   29   36   25   28
+CONECT    2   32   35    1
+CONECT    5   32   30    4
+CONECT    6    7    4   43   44
 CONECT    7   33    6   45   46
 CONECT   36   29
 CONECT   68   34
@@ -133,11 +133,11 @@ CONECT   43    6
 CONECT   44    6
 CONECT   45    7
 CONECT   46    7
-CONECT   30    5   10   13
-CONECT   31   15   67   16   19
+CONECT   30   13    5   10
+CONECT   31   19   15   67   16
 CONECT    1    3    2
 CONECT   32    5    2
-CONECT   33    9   20    7
+CONECT   33   20    7    9
 CONECT   34   68   12
-CONECT   35    2   14
+CONECT   35   14    2
 END

@@ -26,8 +26,8 @@ HETATM   25  C2  GDP   203      15.113  30.753   1.604  1.00  0.00           C
 HETATM   26  N2  GDP   203      15.144  31.631   2.634  1.00  0.00           N
 HETATM   27  N3  GDP   203      14.154  30.836   0.706  1.00  0.00           N
 HETATM   28  C4  GDP   203      14.282  29.938  -0.340  1.00  0.00           C
-HETATM   29  H5' GDP   203       9.102  29.026  -4.084  1.00  0.00           H
-HETATM   30 H5'' GDP   203       9.624  27.976  -2.745  1.00  0.00           H
+HETATM   29  H5' GDP   203       9.625  27.977  -2.745  1.00  0.00           H
+HETATM   30 H5'' GDP   203       9.101  29.025  -4.084  1.00  0.00           H
 HETATM   31  H4' GDP   203       9.249  30.328  -2.035  1.00  0.00           H
 HETATM   32  H3' GDP   203      10.483  31.159  -4.322  1.00  0.00           H
 HETATM   33  H2' GDP   203      12.577  30.352  -3.689  1.00  0.00           H
@@ -38,16 +38,16 @@ HETATM   37 HN21 GDP   203      15.876  31.570   3.328  1.00  0.00           H
 HETATM   38 HN22 GDP   203      14.435  32.346   2.709  1.00  0.00           H
 HETATM   39 HO3' GDP   203       9.281  32.533  -2.798  1.00  0.00           H
 HETATM   40 HO2' GDP   203      12.835  32.579  -4.155  1.00  0.00           H
-CONECT   17   12   34   15   18
-CONECT   25   27   24   26
-CONECT   15   33   13   16   17
-CONECT   13   32   11   14   15
-CONECT   28   27   18   21
-CONECT   11   31   10   12   13
-CONECT   21   28   20   22
-CONECT   10   29   30    9   11
+CONECT   17   12   15   18   34
+CONECT   25   24   26   27
+CONECT   15   13   16   17   33
+CONECT   13   11   14   15   32
+CONECT   28   18   21   27
+CONECT   11   10   12   13   31
+CONECT   21   20   22   28
+CONECT   10   11    9   29   30
 CONECT   22   21   23   24
-CONECT   19   35   18   20
+CONECT   19   18   20   35
 CONECT   34   17
 CONECT   33   15
 CONECT   32   13
@@ -60,22 +60,22 @@ CONECT   37   26
 CONECT   38   26
 CONECT   40   16
 CONECT   39   14
-CONECT   24   36   22   25
-CONECT   26   37   38   25
-CONECT   27   28   25
+CONECT   24   22   25   36
+CONECT   26   25   37   38
+CONECT   27   25   28
 CONECT   20   19   21
-CONECT   18   28   17   19
+CONECT   18   17   19   28
 CONECT    7    6
 CONECT    2    1
-CONECT   16   40   15
+CONECT   16   15   40
 CONECT    8    6
 CONECT    3    1
-CONECT   14   39   13
+CONECT   14   13   39
 CONECT    5    6    1
 CONECT    4    1
 CONECT   12   11   17
-CONECT    9   10    6
+CONECT    9    6   10
 CONECT   23   22
-CONECT    6    9    5    7    8
-CONECT    1    2    5    4    3
+CONECT    6    7    9    8    5
+CONECT    1    2    4    5    3
 END

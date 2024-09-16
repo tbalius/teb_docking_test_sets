@@ -55,27 +55,27 @@ HETATM   54 H292 D1W   203      20.558  25.895 -24.832  1.00  0.00           H
 HETATM   55 H293 D1W   203      20.957  26.041 -23.104  1.00  0.00           H
 CONECT    1    2    6   17
 CONECT   10   12   38    9
-CONECT   11    7   12   16
-CONECT   12   10   13   11
-CONECT   14   30   15   13   31
-CONECT   15   32   33   14   16
+CONECT   11   12    7   16
+CONECT   12   13   10   11
+CONECT   14   13   30   15   31
+CONECT   15   16   14   32   33
 CONECT   18   47   48   49   17
-CONECT   20   19   25   21
-CONECT   21   40   20   22
+CONECT   20   21   19   25
+CONECT   21   40   22   20
 CONECT   22   41   21   23
-CONECT   23   26   22   24
-CONECT   24   42   25   23
-CONECT   25   20   43   24
+CONECT   23   22   24   26
+CONECT   24   42   23   25
+CONECT   25   20   24   43
 CONECT   26   44   45   23   27
-CONECT   28   50   51   52   27
-CONECT   29   53   54   55   27
-CONECT    3    2    4    7
-CONECT    4    3   34    5
-CONECT    5    4   35    6
-CONECT    6   19    1    5
-CONECT    7    3    8   11
-CONECT    8    7   36    9
-CONECT    9   10    8   37
+CONECT   28   50   51   27   52
+CONECT   29   27   53   54   55
+CONECT    3    7    2    4
+CONECT    4    3    5   34
+CONECT    5    6    4   35
+CONECT    6    1    5   19
+CONECT    7    8    3   11
+CONECT    8   36    7    9
+CONECT    9   37    8   10
 CONECT   38   10
 CONECT   30   14
 CONECT   31   14
@@ -102,9 +102,9 @@ CONECT   34    4
 CONECT   35    5
 CONECT   36    8
 CONECT   37    9
-CONECT   19   20    6   39
-CONECT    2    3    1
-CONECT   27   29   26   46   28
+CONECT   19   39    6   20
+CONECT    2    1    3
+CONECT   27   46   28   29   26
 CONECT   13   12   14
 CONECT   16   15   11
 CONECT   17    1   18

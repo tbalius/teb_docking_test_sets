@@ -30,64 +30,64 @@ HETATM   29  C2  GCP   203      15.303  30.936   1.409  1.00  0.00           C
 HETATM   30  N2  GCP   203      15.356  31.898   2.358  1.00  0.00           N
 HETATM   31  N3  GCP   203      14.354  31.040   0.445  1.00  0.00           N
 HETATM   32  C4  GCP   203      14.273  30.115  -0.553  1.00  0.00           C
-HETATM   33  HN1 GCP   203      16.841  29.869   2.229  1.00  0.00           H
-HETATM   34 H3B2 GCP   203       8.197  27.061  -7.069  1.00  0.00           H
-HETATM   35 H3B3 GCP   203       7.491  26.109  -5.751  1.00  0.00           H
-HETATM   36  H5' GCP   203       9.324  29.635  -4.746  1.00  0.00           H
-HETATM   37 H5'' GCP   203       9.487  28.555  -3.342  1.00  0.00           H
-HETATM   38  H4' GCP   203       9.388  30.942  -2.656  1.00  0.00           H
-HETATM   39  H3' GCP   203      10.991  31.467  -4.896  1.00  0.00           H
-HETATM   40  H2' GCP   203      13.021  30.707  -3.994  1.00  0.00           H
-HETATM   41  H1' GCP   203      12.304  31.648  -1.230  1.00  0.00           H
-HETATM   42  H8  GCP   203      13.312  28.394  -3.091  1.00  0.00           H
-HETATM   43  H21 GCP   203      16.050  31.847   3.090  1.00  0.00           H
-HETATM   44  H22 GCP   203      14.702  32.668   2.335  1.00  0.00           H
+HETATM   33 H3B2 GCP   203       8.197  27.061  -7.069  1.00  0.00           H
+HETATM   34 H3B3 GCP   203       7.491  26.109  -5.751  1.00  0.00           H
+HETATM   35  H5' GCP   203       9.324  29.635  -4.746  1.00  0.00           H
+HETATM   36 H5'' GCP   203       9.487  28.555  -3.342  1.00  0.00           H
+HETATM   37  H4' GCP   203       9.388  30.942  -2.656  1.00  0.00           H
+HETATM   38  H3' GCP   203      10.991  31.467  -4.896  1.00  0.00           H
+HETATM   39  H2' GCP   203      13.021  30.707  -3.994  1.00  0.00           H
+HETATM   40  H1' GCP   203      12.304  31.648  -1.230  1.00  0.00           H
+HETATM   41  H8  GCP   203      13.312  28.394  -3.091  1.00  0.00           H
+HETATM   42  H3  GCP   203      13.701  31.810   0.467  1.00  0.00           H
+HETATM   43  H21 GCP   203      14.702  32.668   2.335  1.00  0.00           H
+HETATM   44  H22 GCP   203      16.050  31.847   3.090  1.00  0.00           H
 HETATM   45 HO2' GCP   203      13.370  32.980  -4.241  1.00  0.00           H
 HETATM   46 HO3' GCP   203      11.045  33.576  -3.887  1.00  0.00           H
-CONECT   21   16   19   22   41
+CONECT   21   16   19   22   40
 CONECT   29   28   30   31
-CONECT   19   17   20   21   40
-CONECT   17   15   18   19   39
-CONECT    5    1   34   35    6
+CONECT   19   17   20   21   39
+CONECT   17   18   19   15   38
+CONECT    5    6   34   33    1
 CONECT   32   22   25   31
-CONECT   15   16   17   14   38
+CONECT   15   16   17   14   37
 CONECT   25   24   26   32
-CONECT   14   15   13   36   37
-CONECT   26   25   28   27
-CONECT   23   22   24   42
-CONECT   41   21
-CONECT   40   19
+CONECT   14   13   15   35   36
+CONECT   26   25   27   28
+CONECT   23   22   24   41
+CONECT   40   21
+CONECT   39   19
 CONECT   43   30
 CONECT   44   30
-CONECT   39   17
+CONECT   42   31
+CONECT   38   17
+CONECT   33    5
 CONECT   34    5
-CONECT   35    5
-CONECT   38   15
+CONECT   37   15
+CONECT   35   14
 CONECT   36   14
-CONECT   37   14
-CONECT   42   23
-CONECT   33   28
+CONECT   41   23
 CONECT   45   20
 CONECT   46   18
-CONECT   28   26   29   33
-CONECT   30   29   43   44
-CONECT   31   29   32
+CONECT   28   26   29
+CONECT   30   44   29   43
+CONECT   31   29   32   42
 CONECT   24   23   25
 CONECT   22   21   23   32
 CONECT   11   10
 CONECT    7    6
 CONECT    2    1
-CONECT   20   19   45
+CONECT   20   45   19
 CONECT   12   10
 CONECT    8    6
 CONECT    3    1
-CONECT   18   17   46
+CONECT   18   46   17
 CONECT    9    6   10
 CONECT    4    1
-CONECT   16   15   21
+CONECT   16   21   15
 CONECT   13   14   10
 CONECT   27   26
-CONECT   10   11   13    9   12
-CONECT    6    7    8    9    5
-CONECT    1    2    3    5    4
+CONECT   10   12   13    9   11
+CONECT    6    8    5    9    7
+CONECT    1    5    4    2    3
 END

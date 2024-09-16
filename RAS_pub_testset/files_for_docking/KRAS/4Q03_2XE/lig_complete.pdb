@@ -11,12 +11,12 @@ HETATM   10  HAM 2XE   203      17.062  17.001 -17.774  1.00  0.00           H
 HETATM   11  HAN 2XE   203      15.199  16.272 -19.207  1.00  0.00           H
 HETATM   12  HAO 2XE   203      14.067  14.101 -18.724  1.00  0.00           H
 CONECT    2    1
-CONECT    1    7    3    2
-CONECT    3    1    4    8
-CONECT    4    3    9    5
+CONECT    1    7    2    3
+CONECT    3    4    8    1
+CONECT    4    5    3    9
 CONECT    5    6    4   10
-CONECT    6   11    7    5
-CONECT    7    1    6   12
+CONECT    6    7    5   11
+CONECT    7    6    1   12
 CONECT    8    3
 CONECT    9    4
 CONECT   10    5

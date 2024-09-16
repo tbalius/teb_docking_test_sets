@@ -40,24 +40,24 @@ HETATM   39 H252 LXU   204       1.311  20.013  -7.542  1.00  0.00           H
 HETATM   40 H141 LXU   204       8.167  13.549 -10.856  1.00  0.00           H
 HETATM   41 H142 LXU   204       7.650  14.714  -9.614  1.00  0.00           H
 HETATM   42 H143 LXU   204       6.534  14.253 -10.922  1.00  0.00           H
-CONECT   11   15   17    1
-CONECT   12   18    4   31   32
-CONECT    5   24    1   22
-CONECT   13    1   40   41   42
-CONECT    6   21   14   22
+CONECT   11   17    1   15
+CONECT   12    4   18   31   32
+CONECT    5    1   24   22
+CONECT   13   40   41    1   42
+CONECT    6   14   21   22
 CONECT   14    6    7   10
-CONECT   15    2   11    3
-CONECT    7    8   28   14
-CONECT    8    9    7   29
+CONECT   15    3    2   11
+CONECT    7   14    8   28
+CONECT    8    7   29    9
 CONECT    9    8   16   23
-CONECT   16    9   33   10
-CONECT   10   16   30   14
+CONECT   16   33   10    9
+CONECT   10   14   16   30
 CONECT   17    4   11   25
-CONECT    1    5   13   18   11
-CONECT    2   15   25   19
+CONECT    1   13   18    5   11
+CONECT    2   19   15   25
 CONECT    3   15   20
-CONECT    4   26   27   17   12
-CONECT   18   34   35   12    1
+CONECT    4   17   26   27   12
+CONECT   18   35    1   12   34
 CONECT   36   19
 CONECT   37   19
 CONECT   31   12
@@ -75,11 +75,11 @@ CONECT   26    4
 CONECT   27    4
 CONECT   34   18
 CONECT   35   18
-CONECT   19    2   36   37
+CONECT   19   36    2   37
 CONECT   20    3
 CONECT   21    6   24
-CONECT   22    5    6
-CONECT   23    9   38   39
-CONECT   24    5   21
-CONECT   25    2   17
+CONECT   22    6    5
+CONECT   23   38   39    9
+CONECT   24   21    5
+CONECT   25   17    2
 END

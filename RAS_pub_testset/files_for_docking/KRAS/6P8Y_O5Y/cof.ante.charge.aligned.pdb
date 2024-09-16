@@ -26,43 +26,43 @@ HETATM   25  C2  GDP   302      15.067  30.922   1.614  1.00  0.00           C
 HETATM   26  N2  GDP   302      15.029  31.798   2.643  1.00  0.00           N
 HETATM   27  N3  GDP   302      14.074  30.987   0.693  1.00  0.00           N
 HETATM   28  C4  GDP   302      14.050  30.141  -0.363  1.00  0.00           C
-HETATM   29  HN1 GDP   302      16.780  30.031   2.269  1.00  0.00           H
-HETATM   30  H5' GDP   302       9.082  29.205  -4.400  1.00  0.00           H
-HETATM   31 H5'' GDP   302       9.611  28.137  -3.084  1.00  0.00           H
-HETATM   32  H4' GDP   302       9.022  30.472  -2.364  1.00  0.00           H
-HETATM   33  H3' GDP   302      10.572  31.286  -4.542  1.00  0.00           H
-HETATM   34  H2' GDP   302      12.684  31.023  -3.667  1.00  0.00           H
-HETATM   35  H1' GDP   302      11.885  31.485  -0.827  1.00  0.00           H
-HETATM   36  H8  GDP   302      13.245  28.592  -3.055  1.00  0.00           H
-HETATM   37 HN21 GDP   302      14.279  32.471   2.706  1.00  0.00           H
-HETATM   38 HN22 GDP   302      15.750  31.779   3.350  1.00  0.00           H
+HETATM   29  H5' GDP   302       9.618  28.138  -3.080  1.00  0.00           H
+HETATM   30 H5'' GDP   302       9.077  29.199  -4.397  1.00  0.00           H
+HETATM   31  H4' GDP   302       9.022  30.472  -2.364  1.00  0.00           H
+HETATM   32  H3' GDP   302      10.572  31.286  -4.542  1.00  0.00           H
+HETATM   33  H2' GDP   302      12.684  31.023  -3.667  1.00  0.00           H
+HETATM   34  H1' GDP   302      11.885  31.485  -0.827  1.00  0.00           H
+HETATM   35  H8  GDP   302      13.245  28.592  -3.055  1.00  0.00           H
+HETATM   36  H3  GDP   302      13.342  31.676   0.796  1.00  0.00           H
+HETATM   37 HN21 GDP   302      15.750  31.779   3.350  1.00  0.00           H
+HETATM   38 HN22 GDP   302      14.279  32.471   2.706  1.00  0.00           H
 HETATM   39 HO3' GDP   302      10.210  33.365  -3.556  1.00  0.00           H
 HETATM   40 HO2' GDP   302      12.414  33.327  -3.627  1.00  0.00           H
-CONECT   17   15   18   35   12
+CONECT   17   12   15   18   34
 CONECT   25   24   26   27
-CONECT   15   16   17   13   34
-CONECT   13   14   15   33   11
+CONECT   15   13   16   17   33
+CONECT   13   11   14   15   32
 CONECT   28   18   21   27
-CONECT   11   32   10   12   13
+CONECT   11   12   13   10   31
 CONECT   21   20   22   28
-CONECT   10   30   31    9   11
+CONECT   10   11    9   29   30
 CONECT   22   21   23   24
-CONECT   19   18   20   36
-CONECT   35   17
-CONECT   34   15
-CONECT   33   13
-CONECT   32   11
+CONECT   19   18   20   35
+CONECT   34   17
+CONECT   33   15
+CONECT   36   27
+CONECT   32   13
+CONECT   31   11
+CONECT   29   10
 CONECT   30   10
-CONECT   31   10
-CONECT   36   19
-CONECT   29   24
+CONECT   35   19
 CONECT   37   26
 CONECT   38   26
 CONECT   40   16
 CONECT   39   14
-CONECT   24   22   25   29
+CONECT   24   22   25
 CONECT   26   25   37   38
-CONECT   27   25   28
+CONECT   27   25   28   36
 CONECT   20   19   21
 CONECT   18   17   19   28
 CONECT    7    6
@@ -70,12 +70,12 @@ CONECT    2    1
 CONECT   16   15   40
 CONECT    8    6
 CONECT    3    1
-CONECT   14   39   13
+CONECT   14   13   39
 CONECT    5    6    1
 CONECT    4    1
-CONECT   12   17   11
-CONECT    9   10    6
+CONECT   12   11   17
+CONECT    9    6   10
 CONECT   23   22
-CONECT    6    8    5    9    7
-CONECT    1    3    4    5    2
+CONECT    6    5    9    7    8
+CONECT    1    2    5    4    3
 END

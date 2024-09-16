@@ -46,23 +46,23 @@ HETATM   45  H   C8G   203       4.161  10.274 -13.907  1.00  0.00           H
 HETATM   46 H111 C8G   203       4.903  24.390  -8.325  1.00  0.00           H
 HETATM   47 H112 C8G   203       4.074  23.090  -9.213  1.00  0.00           H
 HETATM   48 H113 C8G   203       3.725  23.352  -7.488  1.00  0.00           H
-CONECT   15   16   13   19
-CONECT   19   15    2   40
-CONECT   26    1    3    9
-CONECT    9   46   47   48   26
-CONECT   10   36   35    3   25
-CONECT   11   24   38   37   23
-CONECT   23   11   22   42   43
-CONECT   12   17   13   39
-CONECT   13   12   15   14
-CONECT    2   17   19   18
+CONECT   15   19   13   16
+CONECT   19   40   15    2
+CONECT   26    9    1    3
+CONECT    9   46   26   47   48
+CONECT   10   36   25    3   35
+CONECT   11   37   38   24   23
+CONECT   23   11   42   22   43
+CONECT   12   39   13   17
+CONECT   13   14   12   15
+CONECT    2   18   19   17
 CONECT   17   12    2   20
-CONECT    4    5   28   20   27
+CONECT    4    5   27   28   20
 CONECT    5    4   22   21
-CONECT    6   29    7   22   30
-CONECT    7   32   24    6   31
+CONECT    6    7   30   29   22
+CONECT    7   32   24   31    6
 CONECT   25    8   24   10   44
-CONECT    8   33    3   25   34
+CONECT    8   33   25   34    3
 CONECT   16   15
 CONECT   14   13
 CONECT   45   18
@@ -87,7 +87,7 @@ CONECT   44   25
 CONECT   33    8
 CONECT   34    8
 CONECT   41   20
-CONECT   20   17    4   41
+CONECT   20   41    4   17
 CONECT   22    5    6   23
 CONECT   24   11    7   25
 CONECT    3    8   10   26

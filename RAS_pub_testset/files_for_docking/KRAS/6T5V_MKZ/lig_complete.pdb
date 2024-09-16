@@ -49,28 +49,28 @@ HETATM   48 H123 MKZ   203       8.353  11.307  -7.365  1.00  0.00           H
 HETATM   49  H11 MKZ   203       5.164  24.115  -8.573  1.00  0.00           H
 HETATM   50  H12 MKZ   203       3.856  23.231  -7.749  1.00  0.00           H
 HETATM   51  H15 MKZ   203       4.079  23.057  -9.507  1.00  0.00           H
-CONECT    1   49   50   51    2
-CONECT    7    8    6   20
-CONECT    8    9   10    7
-CONECT    9   47   48    8   46
+CONECT    1   51   49    2   50
+CONECT    7    6    8   20
+CONECT    8    7   10    9
+CONECT    9   46   47   48    8
 CONECT   10   11    8   34
-CONECT   11   12   10   35
+CONECT   11   12   35   10
 CONECT   12   11   22   20
-CONECT   13   21   20   36
-CONECT   20   12   13    7
-CONECT   19   18    6   14
-CONECT   14   19   15   37
-CONECT    2   30    1   29
-CONECT   15    4   26   14
-CONECT   16   17   27   39   38
-CONECT   17   16   40   41   29
-CONECT    3   31   32   28   29
+CONECT   13   20   21   36
+CONECT   20   13   12    7
+CONECT   19    6   14   18
+CONECT   14   19   37   15
+CONECT    2   29   30    1
+CONECT   15    4   14   26
+CONECT   16   17   38   39   27
+CONECT   17   41   29   16   40
+CONECT    3   29   31   28   32
 CONECT   28   43   44    3   27
-CONECT   26   27   25   15
-CONECT   24   23   25   42
+CONECT   26   25   27   15
+CONECT   24   42   25   23
 CONECT    4    5   23   15
 CONECT    5    4    6   33
-CONECT    6    5   19    7
+CONECT    6    7   19    5
 CONECT   18   19
 CONECT   49    1
 CONECT   50    1
@@ -95,9 +95,9 @@ CONECT   33    5
 CONECT   45   22
 CONECT   29   17    3    2
 CONECT   27   16   26   28
-CONECT   25   26   24
+CONECT   25   24   26
 CONECT   23    4   24
-CONECT   22   45   12   21
+CONECT   22   12   45   21
 CONECT   21   13   22
 CONECT   30    2
 END

@@ -37,22 +37,22 @@ HETATM   36  H19 QPD   203      10.757  15.066 -22.936  1.00  0.00           H
 HETATM   37  H1  QPD   203      16.184  17.135 -17.465  1.00  0.00           H
 HETATM   38 H131 QPD   203      10.182  17.950 -18.212  1.00  0.00           H
 HETATM   39 H132 QPD   203       9.795  16.244 -18.198  1.00  0.00           H
-CONECT   15   12   33   22    4
-CONECT   12   15    2   23
-CONECT    4   16   15   18
-CONECT   16    4    3   34
-CONECT    3   16   17   27
-CONECT   17   13    3   35
-CONECT   13   17   18   31
-CONECT   18   13    4   36
-CONECT   10    8   29    7
-CONECT    8   10    5   19
+CONECT   15   33   12   22    4
+CONECT   12    2   23   15
+CONECT    4   15   16   18
+CONECT   16   34    3    4
+CONECT    3   17   27   16
+CONECT   17    3   35   13
+CONECT   13   31   17   18
+CONECT   18   36    4   13
+CONECT   10    7   29    8
+CONECT    8    5   10   19
 CONECT    6    1   28   19
-CONECT   19    6   20    8
-CONECT    1    6   14   26
-CONECT   14   32    1   11
-CONECT   11   20   14   30
-CONECT   20   11    7   19
+CONECT   19    6    8   20
+CONECT    1    6   26   14
+CONECT   14   32   11    1
+CONECT   11   30   20   14
+CONECT   20    7   11   19
 CONECT    5    9    8   21
 CONECT   37    7
 CONECT   33   15
@@ -71,9 +71,9 @@ CONECT   30   11
 CONECT   25   22
 CONECT   24   21
 CONECT    7   37   10   20
-CONECT   22   15   25   21
-CONECT   23   12   38   39
-CONECT   21   24   22    5
+CONECT   22   21   25   15
+CONECT   23   38   39   12
+CONECT   21    5   22   24
 CONECT    9    5
 CONECT    2   12
 END
