@@ -37,6 +37,7 @@ cp ${filedir0}/INDOCK .
 cat << EOF > gconv.in
 compute_grids                  yes
 DOCK3_7_grids                  yes
+QNIFFT_grid                    yes
 grid_spacing                   0.2
 phi_grid_size                  $dsize
 output_molecule                no
