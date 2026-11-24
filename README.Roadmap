@@ -1,0 +1,300 @@
+README.Roadmap
+==============
+
+Project: Retrospective testing of DOCK 6 -- automation of scripts, test set
+         growth, and generation of statistics/tables for the paper.
+
+This file is a living plan.  Edit it by hand as ideas change.
+Status markers:  [ ] not started   [~] in progress   [x] done
+
+
+GOALS
+-----
+1. Make the existing (mostly csh) scripts robust so they no longer need
+   hand-holding.
+2. Translate the csh scripts to Python.  SLURM submission scripts stay csh
+   and are wrapped/launched by Python.
+3. Make it easy to add new systems to the test set in a semi-automated way.
+4. Allow choosing between a FULL rerun (e.g. after a DOCK code change) and a
+   run on only the newly added systems, then regenerate all tables.
+5. Automatically generate the tables (and numbers) needed for the paper.
+6. Define environment variables in one setup file created at setup time.
+
+
+GUIDING PRINCIPLES
+------------------
+- Target version: ALL tests are evaluated on DOCK 6.14 (not yet released as
+  of 2026-11-24).  Until release, development and script testing use a
+  pre-release/development build; final paper numbers must be regenerated
+  with the released 6.14.  Record the exact DOCK version/build in settings.txt
+  and in every results directory so tables can be traced to a build.
+- Human-readable plain text for manifests, settings, and tables.
+  No YAML.  Use '#' comments, whitespace/tab-delimited columns, key = value.
+- Keep code simple and easy to edit by hand.  The author wants to tweak
+  scripts as we go; build on hand edits, never overwrite them.
+- Preserve behavior when translating.  List intentional changes separately
+  so results in the paper do not change by accident.
+- Nothing is compiled, executed, or submitted without confirming first.
+- Use --dry-run style options wherever a script launches work.
+
+
+PROJECT STRUCTURE: FOUR PARTS
+-----------------------------
+The work divides into two related but separate themes, each with two parts:
+
+  Theme A -- Test sets
+    Part 1. Test set CONSTRUCTION
+            Building new test sets (preparing receptors/ligands, building
+            missing protein pieces, adding systems to the manifest).
+    Part 2. EXISTING test sets
+            Using published/established sets (SB2010, SB2012, SB2025,
+            DT1244, DT100, ...) as they are.
+
+  Theme B -- DOCK features
+    Part 3. Implemented FEATURES in DOCK 6.14
+            What was added/changed in DOCK (e.g. macrocycle docking,
+            covalent minimization, HDB covalent, crosslinker docking).
+    Part 4. TESTING the features with the test sets
+            Running Part 3 features on Part 1/2 test sets and generating
+            the paper's tables.
+
+Each paper section below should be tagged with the part(s) it belongs to.
+Tentative tagging (author to correct):
+    Macrocycle docking .................. Part 3 feature, Part 4 test;
+                                          test set (Y. S. Tan, in progress) is
+                                          Part 1 construction
+    Covalent minimization / HDB covalent  Part 3 feature, Part 4 test
+    RAS test set ........................ Part 1 or 2 (construction vs
+                                          existing -- to clarify)
+    Covalent test set ................... Part 1 or 2 (to clarify)
+    Build missing parts of proteins ..... Part 1 (construction) and/or Part 3
+    Dock crosslinking molecules ......... Part 3 feature, Part 4 test
+    SB2010 / SB2025 / DT1244 / DT100 .... Part 2 (existing)
+
+Design implication: test sets (Parts 1-2) are the "systems" in the manifest;
+features (Part 3) are the "experiments" run on them (Part 4).  A results
+directory is therefore keyed by DOCK version + feature/experiment + test
+set, and the manifest should record which test set each system belongs to.
+
+
+PAPER SECTIONS  (in priority order; top two are the author's main focus)
+-----------------------------------------------------------------------
+Each section probably has its own test set, scripts, and tables.  Details
+below are to be filled in during Phase 0.
+
+  1. Macrocycle docking                                  [PRIORITY]
+       Test set:   macrocycle test set started by Y. S. Tan (incomplete;
+                   needs to be finished/extended -- Part 1 construction,
+                   plus Part 2 once stable)
+                   Status: somewhat far along, over 100 systems so far; NOT
+                   yet committed to GitHub (commit it to the branch so it
+                   is versioned before we start changing scripts).
+                   File layout: (describe)
+       Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  2. Covalent minimization                               [PRIORITY]
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+     2a. HDB covalent  (sub-point of covalent minimization)
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  3. RAS test set evaluation
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  4. Covalent test set evaluation
+       (relationship to item 2 -- same thing or separate? to clarify)
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  5. Build missing parts of proteins
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  6. Dock crosslinking molecules
+       Test set:   (describe)         Scripts:  (list)
+       Metrics/tables needed:  (describe)
+
+  7. General pose-reproduction evaluation on a standard test set
+       Candidates (decision pending):
+         SB2010   780 systems (original; Allen et al. 2015 DOCK6 paper)
+         SB2012   1043 systems (expansion of SB2010)
+         SB2025   1,244 systems (updates/extends SB2010 and SB2012; includes
+                  cofactors and metals; described in a recent paper that
+                  also benchmarks Vina and AutoDock4 with a FARMA2025 set)
+         DT1244   same systems as SB2025 but prepared by a different person;
+                  believed to be just receptor and ligand files (pdb or
+                  mol2), i.e. less preparation than SB2025 (to verify)
+         DT100    a 100-system subset (of DT1244; to verify) -- handy as a
+                  quick test set while developing/translating scripts
+       Options: (a) keep SB2010 for continuity with earlier DOCK6 papers,
+                (b) switch to SB2025,  (c) run both and report side by side.
+       Download page: https://ringo.ams.stonybrook.edu/index.php/SB2025
+       (could not be fetched from the assistant's sandbox; download manually)
+       Metrics/tables needed:  (describe)
+
+Design implication: the system manifest should carry a "section" (or test-set)
+column so one pipeline can serve all sections, and tables can be
+generated per section.  Systems can be added to any section independently.
+Suggested order of work: start Phase 0/3 with the macrocycle and covalent
+minimization scripts (sections 1 and 2/2a), then the remaining sections.
+
+
+REPO SURVEY: teb_docking_test_sets  (read-only look, 2026-11-24)
+----------------------------------------------------------------
+Repo: git@github.com:tbalius/teb_docking_test_sets.git
+Branches: main, version1, version2, and work branch
+          dock614_retrospective_testing_with_Claude
+Size: about 4,000 files (mostly mol2/pdb; ~95 csh, ~11 Python scripts).
+
+  RAS_pub_testset/files_for_docking/   ready-to-dock inputs, one directory
+      per system named PDBID_LIG: 140 RAS (KRAS/HRAS/NRAS/DNA), 43 DUDE-Z,
+      207 covalent (Scarpino et al.).  Each has rec_complete / lig_complete
+      mol2+pdb; covalent ones add cov_sph.pdb and covlig_complete*.mol2.
+  RAS_pub_testset/process_prepare_pdb_files_scripts/   0000-0009 numbered
+      csh/py prep scripts (Chimera, antechamber; covalent and non-covalent).
+  RAS_pub_testset/dock_setups_scripts/   0001-0004 spheres/grids/
+      blastermaster; GIST and 3D-RISM water-map pipelines.
+  RAS_pub_testset/DUDE-Z-like_ligands_and_decoys/   decoy pipeline + dbs.
+  scripts_for_tutorial/   three worked examples (incl. covalent 6OIM).
+
+Observations relevant to the automation:
+  - Numbered scripts (0001...) already define stages.
+  - Scripts skip a system if its output directory exists (crude "new only"
+    mode; a failed/half-finished directory is also skipped).
+  - 53 of 62 csh/py scripts contain hard-coded /home/baliuste paths.
+  - Scripts write SLURM scripts via csh heredocs, then call sbatch.
+  - System list is read from an external file (pdb_lig_map.txt, "PDB LIG"
+    pairs) outside the repo.
+  - Scripts that run docking and compute tables are NOT in the repo.
+
+
+PROPOSED LAYOUT  (to be adjusted once existing scripts are in place)
+-------------------------------------------------------------------
+  README.Roadmap          this file
+  setup.sh                sourceable env vars (DOCK_HOME, paths, ...)
+  settings.txt            key = value settings (thresholds, versions, ...)
+  systems.txt             manifest: one system per line (pdb, ligand, subset)
+  scripts/                Python scripts and the csh SLURM scripts
+  testset/                per-system input data
+  results/<dock_version>/ outputs, one tree per DOCK version
+  tables/                 generated tables for the paper
+
+
+PHASES
+------
+
+Phase 0 -- Inventory
+  [x] Repo teb_docking_test_sets is in this directory (looked at read-only
+      on 2026-11-24; see REPO SURVEY below).
+  [x] Work branch created: dock614_retrospective_testing_with_Claude
+      (confirm it is checked out before any edits to the repo).
+  [ ] Get the scripts that RUN docking and generate tables.  They are not in
+      the repo (deliberately -- very hands-on).  Decide where the new
+      automated versions will live (repo branch?) and whether the old ones
+      are copied in as reference.
+  [ ] Commit the macrocycle test set (Y. S. Tan, >100 systems) to the branch.
+  [ ] Update teb_docking_test_sets/README.md (see Phase 6 for the proposal).
+  [ ] For each script: write a short summary (inputs, outputs, side effects,
+      assumptions, where it needs hand-holding).
+  [ ] Collect a few example output files from each stage.
+  [ ] Decide the list of environment variables (paths only, or also modules,
+      partition, account?).
+
+Phase 1 -- Setup and configuration
+  [ ] setup.sh (bash), generated/updated by a setup step, editable by hand.
+  [ ] How csh/SLURM scripts get the variables: sbatch --export from Python
+      (preferred, single source of truth) or a small setup.csh companion.
+  [ ] settings.txt reader (standard library only).
+  [ ] Startup checks: required variables set, paths exist, clear messages.
+
+Phase 2 -- System manifest and status tracking
+  [ ] systems.txt format and reader.
+  [ ] Per-system, per-stage status inferred from expected output files
+      (prep, dock, analyze).  Report done / missing / failed.
+  [ ] Command-line run modes:
+        --new-only        run only systems/stages with missing outputs
+                          (default)
+        --systems A B     run named systems
+        --full            rerun everything
+        --stage NAME      restrict to one stage
+        --dry-run         show what would run; submit nothing
+  [ ] Decide how to handle stale results after a code change
+      (results directory per DOCK version is the leading option).
+
+Phase 3 -- Script translation (csh -> Python), one script at a time
+  Per script:  summary -> approval -> Python version -> side-by-side check on
+  a small case -> move on.
+  [ ] (list scripts here once inventoried)
+  [ ] Python wrapper for SLURM submission: build sbatch calls, capture job
+      IDs, chain stages with --dependency=afterok, check outputs on
+      completion, report failures so only those can be resubmitted.
+
+Phase 4 -- Adding new systems
+  [ ] Helper to append a row to systems.txt and fetch/prepare inputs.
+  [ ] Automate mechanical prep steps; flag steps needing human review
+      (protonation, cofactors, waters, etc.).
+  [ ] Run on new systems only, then regenerate tables.
+
+Phase 5 -- Statistics and tables for the paper
+  [ ] Parsers for DOCK outputs (scores, RMSD, etc.).
+  [ ] Metrics (to be confirmed): redocking success rate at a given RMSD
+      threshold, enrichment (ROC/AUC, EF), breakdown by subset.
+  [ ] Tables written as tab-delimited/CSV text first; convert to LaTeX or
+      Word/Excel to match the journal template.
+  [ ] Tables built from ALL available results; list missing or failed systems
+      so nothing is silently excluded.
+  [ ] One command regenerates every number and table in the paper.
+
+Phase 6 -- Cleanup and reproducibility
+  [ ] Update teb_docking_test_sets/README.md (currently only a title and
+      clone instructions).  Proposed contents: purpose (docking test sets
+      and setup scripts from the RAS Comp Chem team, for retrospective
+      testing of DOCK 6.14); map of the directories; what each branch is
+      for (main, version1, version2, and the work branch); status and plans
+      with a pointer to README.Roadmap; conventions (plain-text manifests
+      and settings, no hard-coded paths, DOCK version recorded with
+      results); requirements (DOCK 6.14, Chimera, AmberTools, SLURM -- to
+      confirm).  Decide whether README.Roadmap moves into the repo so it is
+      versioned on the work branch.
+  [ ] Document usage in a README (how to add a system, rerun, regenerate).
+  [ ] Compare results between DOCK versions if desired.
+  [ ] Final verification: spot-check tables against raw outputs.
+
+
+OPEN QUESTIONS
+--------------
+- Which standard test set(s): SB2010, SB2025, DT1244, DT100, or several?
+- DT1244 vs SB2025: same systems, different preparation.  Is the paper
+  comparing the two preparations, or just picking one?
+- Is DT100 a subset of DT1244, and is it a random or curated selection?
+  (Proposed use: fast development/regression set.)
+- For each of the four paper sections: what is the test set, which scripts
+  run it, and what does success look like (RMSD, enrichment, built-structure
+  quality, crosslink geometry, ...)?
+- Do the four sections share one pipeline, or does each need its own?
+- When is DOCK 6.14 expected, and what build do we develop against until then
+  (dev branch / release candidate)?
+- Which environment variables belong in the setup file?
+- Which metrics and tables does the paper need (rough sketch is fine)?
+- Where are the scripts that run docking and generate tables (cluster or
+  local)?  Do the macrocycle and covalent minimization scripts live in the
+  repo or elsewhere?
+- What do the per-system directories look like in the existing test set?
+- Where is DOCK 6 run (cluster name, modules, SLURM partition/account)?
+- Python version available on the cluster?
+
+
+NOTES / DECISIONS LOG
+---------------------
+(Add dated entries here as decisions are made.)
+2026-11-24  Roadmap created.  Decided: plain-text config, csh SLURM scripts
+            kept and wrapped by Python, incremental translation.
+2026-11-24  Project organized as four parts in two groups (test sets:
+            construction + existing; DOCK features: implemented + testing).
+            Priority: macrocycle docking, covalent minimization (+HDB
+            covalent).  All tests target DOCK 6.14.  Work branch created.
+            Docking/table scripts stay outside the repo for now.  Added
+            task: update teb_docking_test_sets/README.md (Phase 6).
