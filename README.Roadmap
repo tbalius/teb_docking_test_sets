@@ -175,6 +175,35 @@ Observations relevant to the automation:
   - Scripts that run docking and compute tables are NOT in the repo.
 
 
+PIPELINE STAGES  (per the author, 2026-11-24)
+---------------------------------------------
+  Stage 1. PREPARE systems         scripts that build docking-ready inputs
+                                   from raw structures (Chimera, antechamber,
+                                   ...; e.g. process_prepare_pdb_files_scripts)
+  Stage 2. STAGING area            prepared systems are copied here; files can
+                                   be EDITED BY HAND at this point (the
+                                   manual-review step: protonation, cofactors,
+                                   waters, ...).  Matches 003.files_for_docking.
+  Stage 3. PREPARE for docking     scripts that turn staged systems into DOCK
+                                   inputs (spheres, grids, blastermaster, ...;
+                                   e.g. dock_setups_scripts 0001-0004).
+  Stage 4. RUN docking             separate directory; submits DOCK jobs.
+  Stage 5. ANALYZE docking         separate directory; parses results,
+                                   computes statistics, and makes the tables.
+
+Design implications:
+  - The staging area is the human/automation boundary.  Reruns must NEVER
+    overwrite staged files that were hand-edited; only copy into staging for
+    systems not already staged (or when explicitly forced, with a warning).
+  - Stages 1-3 are test set construction/setup; stages 4-5 are testing.
+    Run modes (--new-only, --systems, --full, --stage, --dry-run) apply per
+    stage.  Rerunning with a new DOCK build normally re-does only stages 4-5
+    (and 3 if the build changes grids/spheres).
+  - Stage 4 (run) and stage 5 (analyze) are kept apart so tables can be
+    regenerated without rerunning docking.
+  - The scripts for stages 4-5 are the ones not yet in the repo.
+
+
 PROPOSED LAYOUT  (to be adjusted once existing scripts are in place)
 -------------------------------------------------------------------
   README.Roadmap          this file
@@ -185,6 +214,10 @@ PROPOSED LAYOUT  (to be adjusted once existing scripts are in place)
   testset/                per-system input data
   results/<dock_version>/ outputs, one tree per DOCK version
   tables/                 generated tables for the paper
+
+  Possible directory scheme following the stages (names to be decided):
+    01.prepare/   02.staging/   03.dockprep/   04.dock/   05.analyze/
+  (05.analyze would contain the table-generation scripts and tables/.)
 
 
 PHASES
@@ -217,7 +250,8 @@ Phase 1 -- Setup and configuration
 Phase 2 -- System manifest and status tracking
   [ ] systems.txt format and reader.
   [ ] Per-system, per-stage status inferred from expected output files
-      (prep, dock, analyze).  Report done / missing / failed.
+      (prepare, staging, dockprep, dock, analyze).  Report done / missing /
+      failed.
   [ ] Command-line run modes:
         --new-only        run only systems/stages with missing outputs
                           (default)
